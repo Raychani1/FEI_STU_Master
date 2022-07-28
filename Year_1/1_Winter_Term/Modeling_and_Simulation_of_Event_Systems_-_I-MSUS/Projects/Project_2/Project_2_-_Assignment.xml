@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://netgrif.github.io/petriflow/petriflow.schema.xsd">
+	<id>assignment</id>
+	<initials>ASS</initials>
+	<title>Project 2 - Assignment</title>
+	<icon>description</icon>
+	<defaultRole>true</defaultRole>
+	<transitionRole>false</transitionRole>
+	<!-- TRANSACTIONS -->
+	<!-- ROLES -->
+	<role>
+		<id>ais</id>
+		<title>Academic Information System</title>
+	</role>
+	<role>
+		<id>lecturer</id>
+		<title>Lecturer</title>
+	</role>
+	<role>
+		<id>student</id>
+		<title>Student</title>
+	</role>
+	<!-- PROCESS ROLE REFS -->
+	<!-- PROCESS USER REFS -->
+	<!-- DATA -->
+	<data type="enumeration">
+		<id>lecturer_zajac1_courses</id>
+		<title></title>
+		<values>B-LA1 - Linear Algebra 1</values>
+		<values>B-LA2 - Linear Algebra 2</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_stopjakova_courses</id>
+		<title></title>
+		<values>B-LSI - Logical Systems</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_rudolf_courses</id>
+		<title></title>
+		<values>B-MAT1I - Mathematics 1</values>
+		<values>B-MAT2I - Mathematics 2</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_zajac2_courses</id>
+		<title></title>
+		<values>B-PROG1 - Programming 1</values>
+		<values>B-PROG2 - Programming 2</values>
+		<values>I-UPB - Introduction to Computer Security</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_hubinsky_courses</id>
+		<title></title>
+		<values>B-API - Computer Architecture</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_polakovic_courses</id>
+		<title></title>
+		<values>B-DIM - Discrete Mathematics</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_juhas_courses</id>
+		<title></title>
+		<values>B-DUS - Discrete Event Systems</values>
+		<values>B-OOP - Object Oriented Programming</values>
+		<values>B-VSA - Developement of Software Applications</values>
+		<values>I-MSUS - Modeling and Simulation of Event Systems</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_nanasiova_courses</id>
+		<title></title>
+		<values>B-MASTA - Mathematical Statistics</values>
+		<values>B-AS - Algebraic Structures</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_satka_courses</id>
+		<title></title>
+		<values>B-MPPI - Microprocessors and their Programming</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_oravec_courses</id>
+		<title></title>
+		<values>B-PS - Computer Networks</values>
+		<values>I-SUNS - Machine Learning and Neural Networks</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_drozda_courses</id>
+		<title></title>
+		<values>B-PT - Programing Techniques</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_vojvoda_courses</id>
+		<title></title>
+		<values>B-DBS - Database Systems</values>
+		<values>B-AZA - Analysis and Complexity of Algorithms</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_kozakova_courses</id>
+		<title></title>
+		<values>B-EMAR - E-Marketing</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_sekaj_courses</id>
+		<title></title>
+		<values>B-UMINT - Artificial Intelligence</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_sramka_courses</id>
+		<title></title>
+		<values>B-OS - Operating Systems</values>
+		<values>B-SWI - Software Engineering</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_zakova_courses</id>
+		<title></title>
+		<values>B-WEBTE1 - Web Technologies 1</values>
+		<values>B-WEBTE1 - Web Technologies 2</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_spirkova_courses</id>
+		<title></title>
+		<values>B-ZMP - Basics of Management and Enterprize</values>
+	</data>
+	<data type="enumeration">
+		<id>lecturer_nemoga_courses</id>
+		<title></title>
+		<values>I-LOG - Logic</values>
+	</data>
+	<data type="enumeration">
+		<id>available_courses</id>
+		<title>Course</title>
+	</data>
+	<data type="enumeration_map">
+		<id>lecturers</id>
+		<title>Lecturer</title>
+		<options>			<option key="zajac1">doc. RNDr. Michal Zajac, PhD.</option>
+			<option key="stopjakova">prof. Ing. Viera Stopjaková, PhD.</option>
+			<option key="rudolf">doc. RNDr. Boris Rudolf, PhD.</option>
+			<option key="zajac2">prof. Ing. Pavol Zajac, PhD.</option>
+			<option key="hubinsky">prof. Ing. Peter Hubinský, PhD.</option>
+			<option key="polakovic">doc. Mgr. Marcel Polakovič, PhD. </option>
+			<option key="juhas">prof. RNDr. Gabriel Juhás, PhD.</option>
+			<option key="nanasiova">doc. RNDr. Oľga Nánásiová, PhD. </option>
+			<option key="satka">prof. Ing. Alexander Šatka, CSc.</option>
+			<option key="oravec">prof. Dr. Ing. Miloš Oravec</option>
+			<option key="drozda">Dr. rer. nat. Martin Drozda</option>
+			<option key="vojvoda">doc. Ing. Milan Vojvoda, PhD.</option>
+			<option key="kozakova">prof. Ing. Alena Kozáková, PhD.</option>
+			<option key="sekaj">prof. Ing. Ivan Sekaj, PhD.</option>
+			<option key="sramka">doc. Ing. Michal Šrámka, PhD.</option>
+			<option key="zakova">doc. Ing. Katarína Žáková, PhD.</option>
+			<option key="spirkova">doc. Ing. Daniela Špirková, PhD.</option>
+			<option key="nemoga">doc. RNDr. Karol Nemoga, CSc.</option>
+		</options>
+		<action trigger="set">available_courses: f.available_courses,
+lecturer_zajac1_courses: f.lecturer_zajac1_courses,
+lecturer_stopjakova_courses: f.lecturer_stopjakova_courses,
+lecturer_rudolf_courses: f.lecturer_rudolf_courses,
+lecturer_zajac2_courses: f.lecturer_zajac2_courses,
+lecturer_hubinsky_courses: f.lecturer_hubinsky_courses,
+lecturer_polakovic_courses: f.lecturer_polakovic_courses,
+lecturer_juhas_courses: f.lecturer_juhas_courses,
+lecturer_nanasiova_courses: f.lecturer_nanasiova_courses,
+lecturer_satka_courses: f.lecturer_satka_courses,
+lecturer_oravec_courses: f.lecturer_oravec_courses,
+lecturer_drozda_courses: f.lecturer_drozda_courses,
+lecturer_vojvoda_courses: f.lecturer_vojvoda_courses,
+lecturer_kozakova_courses: f.lecturer_kozakova_courses,
+lecturer_sekaj_courses: f.lecturer_sekaj_courses,
+lecturer_sramka_courses: f.lecturer_sramka_courses,
+lecturer_zakova_courses: f.lecturer_zakova_courses,
+lecturer_spirkova_courses: f.lecturer_spirkova_courses,
+lecturer_nemoga_courses: f.lecturer_nemoga_courses,
+lecturers: f.lecturers;
+
+if ((lecturers.value as String) == "zajac1") {
+	change available_courses choices { lecturer_zajac1_courses?.choices }
+} else if ((lecturers.value as String) == "stopjakova") {
+	change available_courses choices { lecturer_stopjakova_courses?.choices }
+} else if ((lecturers.value as String) == "rudolf") {
+	change available_courses choices { lecturer_rudolf_courses?.choices }
+} else if ((lecturers.value as String) == "zajac2") {
+	change available_courses choices { lecturer_zajac2_courses?.choices }
+} else if ((lecturers.value as String) == "hubinsky") {
+	change available_courses choices { lecturer_hubinsky_courses?.choices }
+} else if ((lecturers.value as String) == "polakovic") {
+	change available_courses choices { lecturer_polakovic_courses?.choices }
+} else if ((lecturers.value as String) == "juhas") {
+	change available_courses choices { lecturer_juhas_courses?.choices }
+} else if ((lecturers.value as String) == "nanasiova") {
+	change available_courses choices { lecturer_nanasiova_courses?.choices }
+} else if ((lecturers.value as String) == "satka") {
+	change available_courses choices { lecturer_satka_courses?.choices }
+} else if ((lecturers.value as String) == "oravec") {
+	change available_courses choices { lecturer_oravec_courses?.choices }
+} else if ((lecturers.value as String) == "drozda") {
+	change available_courses choices { lecturer_drozda_courses?.choices }
+} else if ((lecturers.value as String) == "vojvoda") {
+	change available_courses choices { lecturer_vojvoda_courses?.choices }
+} else if ((lecturers.value as String) == "kozakova") {
+	change available_courses choices { lecturer_kozakova_courses?.choices }
+} else if ((lecturers.value as String) == "sekaj") {
+	change available_courses choices { lecturer_sekaj_courses?.choices }
+} else if ((lecturers.value as String) == "sramka") {
+	change available_courses choices { lecturer_sramka_courses?.choices }
+} else if ((lecturers.value as String) == "zakova") {
+	change available_courses choices { lecturer_zakova_courses?.choices }
+} else if ((lecturers.value as String) == "spirkova") {
+	change available_courses choices { lecturer_spirkova_courses?.choices }
+} else if ((lecturers.value as String) == "nemoga") {
+	change available_courses choices { lecturer_nemoga_courses?.choices }
+} 
+</action>
+	</data>
+	<data type="text">
+		<id>text_1</id>
+		<title>Course</title>
+	</data>
+	<data type="text">
+		<id>assignment_name</id>
+		<title>Assignment Name</title>
+	</data>
+	<data type="number">
+		<id>max_points</id>
+		<title>Max Points</title>
+	</data>
+	<data type="text">
+		<id>description</id>
+		<title>Description</title>
+		<values>area</values>
+	</data>
+	<data type="text">
+		<id>student</id>
+		<title>Student</title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_1</id>
+		<title></title>
+		<init>t1</init>
+	</data>
+	<!-- I18NS -->
+	<!-- TRANSITIONS -->
+	<transition>
+		<id>t1</id>
+		<x>220</x>
+		<y>100</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Assignment</label>
+		<icon>description</icon>
+		<roleRef>
+			<id>ais</id>
+			<logic>
+				<perform>true</perform>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>lecturers</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>4</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>available_courses</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>1</y>
+					<rows>1</rows>
+					<cols>4</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>assignment_name</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>2</y>
+					<rows>1</rows>
+					<cols>3</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>max_points</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>3</x>
+					<y>2</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>description</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>3</y>
+					<rows>2</rows>
+					<cols>4</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+	</transition>
+	<transition>
+		<id>t2</id>
+		<x>220</x>
+		<y>260</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Publish</label>
+		<icon>history_edu</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_1</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="assign">
+			<id>t2_assign</id>
+			<actions phase="pre">
+				<action>taskRef_1: f.taskRef_1;
+
+change taskRef_1 value {
+    [findTask{it.caseId.eq(useCase.stringId).and(it.transitionId.eq("t1"))}?.stringId]
+}
+</action>
+			</actions>
+		</event>
+	</transition>
+	<!-- PLACES -->
+	<!-- ARCS -->
+</document>
