@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://netgrif.github.io/petriflow/petriflow.schema.xsd">
+	<id>review</id>
+	<initials>REV</initials>
+	<title>Project 2 - Review</title>
+	<icon>reviews</icon>
+	<defaultRole>true</defaultRole>
+	<transitionRole>false</transitionRole>
+	<!-- TRANSACTIONS -->
+	<!-- ROLES -->
+	<role>
+		<id>ais</id>
+		<title>Academic Information System</title>
+	</role>
+	<role>
+		<id>lecturer</id>
+		<title>Lecturer</title>
+	</role>
+	<role>
+		<id>student</id>
+		<title>Student</title>
+	</role>
+	<!-- PROCESS ROLE REFS -->
+	<!-- PROCESS USER REFS -->
+	<!-- DATA -->
+	<data type="number">
+		<id>number_1</id>
+		<title>Points</title>
+		<init>0</init>
+	</data>
+	<data type="text">
+		<id>text_4</id>
+		<title>Comments</title>
+		<values>area</values>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_0</id>
+		<title></title>
+		<init>t1</init>
+	</data>
+	<!-- I18NS -->
+	<!-- TRANSITIONS -->
+	<transition>
+		<id>t1</id>
+		<x>220</x>
+		<y>180</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Review</label>
+		<icon>reviews</icon>
+		<roleRef>
+			<id>ais</id>
+			<logic>
+				<perform>true</perform>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>number_1</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>text_4</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>1</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>3</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+	</transition>
+	<transition>
+		<id>t2</id>
+		<x>220</x>
+		<y>300</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Write Review</label>
+		<icon>rate_review</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>true</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_0</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+	</transition>
+	<!-- PLACES -->
+	<!-- ARCS -->
+</document>

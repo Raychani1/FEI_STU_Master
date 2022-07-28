@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://netgrif.github.io/petriflow/petriflow.schema.xsd">
+	<id>ais_university_assignment</id>
+	<initials>AIS_UNI_ASS</initials>
+	<title>Project 2 - AIS University Assignment</title>
+	<icon>school</icon>
+	<defaultRole>true</defaultRole>
+	<transitionRole>false</transitionRole>
+	<!-- TRANSACTIONS -->
+	<!-- ROLES -->
+	<role>
+		<id>ais</id>
+		<title>Academic Information System</title>
+	</role>
+	<role>
+		<id>lecturer</id>
+		<title>Lecturer</title>
+	</role>
+	<role>
+		<id>student</id>
+		<title>Student</title>
+	</role>
+	<!-- PROCESS ROLE REFS -->
+	<!-- PROCESS USER REFS -->
+	<!-- DATA -->
+	<data type="taskRef">
+		<id>taskRef_0</id>
+		<title></title>
+	</data>
+	<data type="file">
+		<id>file_0</id>
+		<title>Assignment File</title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_1</id>
+		<title></title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_2</id>
+		<title></title>
+	</data>
+	<data type="file">
+		<id>file_1</id>
+		<title>Assignment File</title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_3</id>
+		<title></title>
+		<init>t9</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_4</id>
+		<title></title>
+		<init>t4</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_5</id>
+		<title></title>
+		<init>t9</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_6</id>
+		<title></title>
+	</data>
+	<data type="text">
+		<id>student</id>
+		<title>Student</title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_7</id>
+		<title></title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_8</id>
+		<title></title>
+		<init>t9</init>
+	</data>
+	<data type="boolean">
+		<id>approve_return</id>
+		<title>Approve Return</title>
+		<init>false</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_9</id>
+		<title></title>
+		<init>t1</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_10</id>
+		<title></title>
+		<init>t9</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_11</id>
+		<title></title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_12</id>
+		<title></title>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_13</id>
+		<title></title>
+		<init>t18</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_14</id>
+		<title></title>
+		<init>t18</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_15</id>
+		<title></title>
+		<init>t18</init>
+	</data>
+	<data type="taskRef">
+		<id>taskRef_16</id>
+		<title></title>
+		<init>t18</init>
+	</data>
+	<!-- I18NS -->
+	<!-- TRANSITIONS -->
+	<transition>
+		<id>t2</id>
+		<x>220</x>
+		<y>340</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Publish Assignment in AIS</label>
+		<icon>history_edu</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_0</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="assign">
+			<id>t2_assign</id>
+			<actions phase="pre">
+				<action>taskRef_0: f.taskRef_0,
+taskRef_1: f.taskRef_1,
+taskRef_2: f.taskRef_2,
+taskRef_7: f.taskRef_7;
+
+def groupId = findCase { it.processIdentifier.eq("org_group").and(it.author.id.eq(loggedUser().id))}?.stringId;
+
+// New Assignment Case
+def assignment_case = createCase("${groupId}_assignment");
+
+// Assign Publish task
+def assignment_publish_task = assignTask("t2", assignment_case)
+
+// Set up Publish
+change taskRef_0 value {
+    [assignment_publish_task?.stringId]
+}
+
+// Set up View Value
+change taskRef_1 value { 
+    [assignment_case.tasks.find{it.transition == "t1"}?.task] 
+}
+
+// Set up Additional Information in Task
+change taskRef_2 value { 
+    [assignment_case.tasks.find{it.transition == "t1"}?.task] 
+}
+
+// Set up Additional Information in Task
+change taskRef_7 value { 
+    [assignment_case.tasks.find{it.transition == "t1"}?.task] 
+}
+</action>
+			</actions>
+		</event>
+	</transition>
+	<transition>
+		<id>t4</id>
+		<x>460</x>
+		<y>220</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Check Assignment Description</label>
+		<icon>search</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<roleRef>
+			<id>student</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_1</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="assign">
+			<id>t4_assign</id>
+		</event>
+	</transition>
+	<transition>
+		<id>t6</id>
+		<x>580</x>
+		<y>340</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Work on Assignment</label>
+		<icon>work</icon>
+		<roleRef>
+			<id>student</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+	</transition>
+	<transition>
+		<id>t8</id>
+		<x>780</x>
+		<y>340</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Upload Assignment</label>
+		<icon>backup</icon>
+		<roleRef>
+			<id>student</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_2</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_3</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>2</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_13</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>1</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="finish">
+			<id>t8_finish</id>
+		</event>
+		<event type="assign">
+			<id>t8_assign</id>
+			<actions phase="pre">
+				<action>student_data: t.t18,
+student: f.student;
+
+make student, visible on student_data when { true }
+
+def usr = userService?.getLoggedOrSystem()
+
+change student value { "${usr?.fullName} (${usr?.email})" as String }
+</action>
+			</actions>
+		</event>
+	</transition>
+	<transition>
+		<id>t9</id>
+		<x>300</x>
+		<y>100</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>File Upload</label>
+		<icon>file_upload</icon>
+		<roleRef>
+			<id>ais</id>
+			<logic>
+				<perform>true</perform>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>file_1</id>
+				<logic>
+					<behavior>editable</behavior>
+					<behavior>required</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>4</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance></appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+	</transition>
+	<transition>
+		<id>t11</id>
+		<x>1020</x>
+		<y>260</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Request Return of Assignment</label>
+		<icon>arrow_back</icon>
+		<roleRef>
+			<id>student</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+	</transition>
+	<transition>
+		<id>t12</id>
+		<x>980</x>
+		<y>340</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Wait for Review</label>
+		<icon>watch_later</icon>
+		<roleRef>
+			<id>student</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+	</transition>
+	<transition>
+		<id>t13</id>
+		<x>1420</x>
+		<y>340</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Review</label>
+		<icon>rate_review</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_4</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_5</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>2</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_6</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>3</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_14</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>1</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="assign">
+			<id>t13_assign</id>
+			<actions phase="pre">
+				<action>t16: t.t16,
+taskRef_6: f.taskRef_6,
+taskRef_11: f.taskRef_11;
+
+def groupId = findCase { it.processIdentifier.eq("org_group").and(it.author.id.eq(loggedUser().id))}?.stringId;
+
+// New Review Case
+def review_case = createCase("${groupId}_review");
+
+// Assign Publish task
+def write_review_task = assignTask("t2", review_case)
+
+// Set up Publish
+change taskRef_6 value {
+    [write_review_task?.stringId]
+}
+
+// Set up View Value
+change taskRef_11 value { 
+    [review_case.tasks.find{it.transition == "t1"}?.task] 
+}
+
+make taskRef_11, visible on t16 when { true }
+</action>
+			</actions>
+		</event>
+	</transition>
+	<transition>
+		<id>t14</id>
+		<x>1340</x>
+		<y>220</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Approve</label>
+		<icon>done</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+	</transition>
+	<transition>
+		<id>t15</id>
+		<x>1340</x>
+		<y>300</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Decline</label>
+		<icon>close</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+	</transition>
+	<transition>
+		<id>t16</id>
+		<x>1580</x>
+		<y>340</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Read Review</label>
+		<icon>local_library</icon>
+		<roleRef>
+			<id>student</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_9</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_10</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>2</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_11</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>3</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_15</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>1</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+	</transition>
+	<transition>
+		<id>t17</id>
+		<x>1220</x>
+		<y>260</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Decide</label>
+		<icon>call_split</icon>
+		<roleRef>
+			<id>lecturer</id>
+			<logic>
+				<perform>true</perform>
+				<delegate>false</delegate>
+				<cancel>false</cancel>
+				<assigned>true</assigned>
+				<view>true</view>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>taskRef_7</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_8</id>
+				<logic>
+					<behavior>visible</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>2</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>approve_return</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>3</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance></appearance>
+				</layout>
+			</dataRef>
+			<dataRef>
+				<id>taskRef_16</id>
+				<logic>
+					<behavior>editable</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>1</y>
+					<rows>1</rows>
+					<cols>1</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="finish">
+			<id>t17_finish</id>
+			<actions phase="post">
+				<action>approved_return: f.approve_return;
+
+if ((approved_return.value as Boolean) == false) {
+    async.run {
+        assignTask("t15")
+        finishTask("t15")
+    }
+} else {
+    async.run {
+        assignTask("t14")
+        finishTask("t14")
+    }
+}
+</action>
+			</actions>
+		</event>
+	</transition>
+	<transition>
+		<id>t18</id>
+		<x>220</x>
+		<y>100</y>
+		<layout>
+			<offset>0</offset>
+		</layout>
+		<label>Student Data</label>
+		<icon>square_foot</icon>
+		<roleRef>
+			<id>ais</id>
+			<logic>
+				<perform>true</perform>
+			</logic>
+		</roleRef>
+		<dataGroup>
+			<id>DataGroup</id>
+			<layout>grid</layout>
+			<dataRef>
+				<id>student</id>
+				<logic>
+					<behavior>hidden</behavior>
+				</logic>
+				<layout>
+					<x>0</x>
+					<y>0</y>
+					<rows>1</rows>
+					<cols>4</cols>
+					<offset>0</offset>
+					<template>material</template>
+					<appearance>outline</appearance>
+				</layout>
+			</dataRef>
+		</dataGroup>
+		<event type="assign">
+			<id>t18_assign</id>
+			<actions phase="pre">
+				<action>
+</action>
+			</actions>
+		</event>
+	</transition>
+	<!-- PLACES -->
+	<place>
+		<id>p1</id>
+		<x>100</x>
+		<y>340</y>
+		<label></label>
+		<tokens>1</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p2</id>
+		<x>340</x>
+		<y>220</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p4</id>
+		<x>420</x>
+		<y>340</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p5</id>
+		<x>700</x>
+		<y>340</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p7</id>
+		<x>860</x>
+		<y>340</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p8</id>
+		<x>1100</x>
+		<y>260</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p9</id>
+		<x>1300</x>
+		<y>260</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p10</id>
+		<x>1100</x>
+		<y>340</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p11</id>
+		<x>1500</x>
+		<y>340</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<place>
+		<id>p12</id>
+		<x>1660</x>
+		<y>340</y>
+		<label></label>
+		<tokens>0</tokens>
+		<static>false</static>
+	</place>
+	<!-- ARCS -->
+	<arc>
+		<id>a1</id>
+		<type>regular</type>
+		<sourceId>p1</sourceId>
+		<destinationId>t2</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a2</id>
+		<type>regular</type>
+		<sourceId>t2</sourceId>
+		<destinationId>p2</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a4</id>
+		<type>read</type>
+		<sourceId>p2</sourceId>
+		<destinationId>t4</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a8</id>
+		<type>regular</type>
+		<sourceId>p4</sourceId>
+		<destinationId>t6</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a9</id>
+		<type>regular</type>
+		<sourceId>t6</sourceId>
+		<destinationId>p5</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a13</id>
+		<type>regular</type>
+		<sourceId>t8</sourceId>
+		<destinationId>p7</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a14</id>
+		<type>regular</type>
+		<sourceId>p7</sourceId>
+		<destinationId>t11</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a15</id>
+		<type>regular</type>
+		<sourceId>p7</sourceId>
+		<destinationId>t12</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a17</id>
+		<type>regular</type>
+		<sourceId>p9</sourceId>
+		<destinationId>t14</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a19</id>
+		<type>regular</type>
+		<sourceId>p9</sourceId>
+		<destinationId>t15</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a20</id>
+		<type>regular</type>
+		<sourceId>t12</sourceId>
+		<destinationId>p10</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a21</id>
+		<type>regular</type>
+		<sourceId>t15</sourceId>
+		<destinationId>p10</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a22</id>
+		<type>regular</type>
+		<sourceId>p10</sourceId>
+		<destinationId>t13</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a23</id>
+		<type>regular</type>
+		<sourceId>t13</sourceId>
+		<destinationId>p11</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a24</id>
+		<type>regular</type>
+		<sourceId>p11</sourceId>
+		<destinationId>t16</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a25</id>
+		<type>regular</type>
+		<sourceId>t16</sourceId>
+		<destinationId>p12</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a26</id>
+		<type>regular</type>
+		<sourceId>t11</sourceId>
+		<destinationId>p8</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a27</id>
+		<type>regular</type>
+		<sourceId>p8</sourceId>
+		<destinationId>t17</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a28</id>
+		<type>regular</type>
+		<sourceId>t17</sourceId>
+		<destinationId>p9</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a29</id>
+		<type>regular</type>
+		<sourceId>t14</sourceId>
+		<destinationId>p4</destinationId>
+		<multiplicity>1</multiplicity>
+		<breakPoint><x>580</x><y>220</y></breakPoint>
+	</arc>
+	<arc>
+		<id>a30</id>
+		<type>regular</type>
+		<sourceId>t2</sourceId>
+		<destinationId>p4</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+	<arc>
+		<id>a31</id>
+		<type>regular</type>
+		<sourceId>p5</sourceId>
+		<destinationId>t8</destinationId>
+		<multiplicity>1</multiplicity>
+	</arc>
+</document>
