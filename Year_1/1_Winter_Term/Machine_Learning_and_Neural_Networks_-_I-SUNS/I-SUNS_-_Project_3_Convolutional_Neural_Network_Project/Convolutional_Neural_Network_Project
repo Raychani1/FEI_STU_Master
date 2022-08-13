@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# Color definitions
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+ROOT_DIR=$(pwd)
+
+# Check for existence of Virtual Environment
+function check_for_virtual_environment() {
+    if [ ! -d "$ROOT_DIR/venv" ] ; then
+
+      # If not found create one
+      echo -e "${GREEN}Creating Virtual Environment\n${NC}"
+      python -m venv venv
+
+      else
+        # If it exists inform the user
+        echo -e "${GREEN}Found existing Virtual Environment\n${NC}"
+
+    fi
+}
+
+# Activate Virtual Environment
+function activate_virtual_environment() {
+    echo -e "${GREEN}Activating Virtual Environment\n${NC}"
+    source "$ROOT_DIR/venv/bin/activate"
+}
+
+# Get current Virtual Environment name
+function get_virtual_environment() {
+    echo -e "${GREEN}Current Virtual Environment\n${NC}"
+    echo "$VIRTUAL_ENV"
+}
+
+# Run the setup.py script
+function run_setup() {
+    echo -e "${GREEN}\nRunning setup.py\n${NC}"
+    python "$ROOT_DIR/utils/setup.py" "$ROOT_DIR"
+}
+
+# Run the main.py script
+function run_main() {
+    echo -e "${GREEN}\nRunning main.py\n${NC}"
+    sleep 3;
+    clear;
+    python "$ROOT_DIR/main.py" "$1"
+}
+
+# Run the whole project
+function run() {
+  if [ "$#" -lt 1 ]; then
+    echo -e "${RED}Missing Argument!\n${NC}"
+    elif [ "$#" -eq 1 ]; then
+        check_for_virtual_environment
+        activate_virtual_environment
+        get_virtual_environment
+        run_setup
+        run_main "$1"
+    else
+      echo -e "${RED}Too many arguments!\n${NC}"
+  fi
+}
+
+run "$@"
