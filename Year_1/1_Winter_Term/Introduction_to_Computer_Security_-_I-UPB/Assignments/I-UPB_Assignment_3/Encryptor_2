@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Color definitions
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+# Set up Output Folder Path
+output_directory="$(pwd)/output"
+
+# Set up Key Store Folder Path
+if [ "$#" -lt 1 ]; then
+    keys_directory="$(pwd)/keys"
+    elif [ "$#" -eq 1 ]; then
+        keys_directory="$1"
+    else
+      echo -e "${RED}Too many arguments! Try again and specify only the folder where to save your RSA keys!\n${NC}"
+fi
+
+# Check if the Virtual Environment already exists
+if [ ! -d "$(pwd)/venv" ] ; then
+
+  # If not create one
+  echo -e "${GREEN}Creating Virtual Environment\n${NC}"
+  python -m venv venv
+
+  else
+    # If it exists inform the user
+    echo -e "${GREEN}Found existing Virtual Environment\n${NC}"
+fi
+
+# Activate the Virtual Environment
+echo -e "${GREEN}Activating Virtual Environment\n${NC}"
+source venv/bin/activate
+
+# Display the current Virtual Environment
+echo -e "${GREEN}Current Virtual Environment\n${NC}"
+echo "$VIRTUAL_ENV"
+
+# Run the Setup script
+echo -e "${GREEN}\nRunning setup.py\n${NC}"
+python "./setup.py" "$keys_directory" "$output_directory"
+
+# Run the Main script
+echo -e "${GREEN}\nRunning main.py\n${NC}"
+sleep 3;
+clear;
+python "./main.py" "$keys_directory"
