@@ -1,0 +1,12 @@
+.idea
+.vscode
+
+# virtualenv
+.venv
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Folders to ignore
+data
