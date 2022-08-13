@@ -1,0 +1,3873 @@
+Information about the Training Data Set
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 44776 entries, 0 to 44775
+Data columns (total 27 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   id                    44776 non-null  object 
+ 1   artist_id             44776 non-null  object 
+ 2   artist                44776 non-null  object 
+ 3   name                  44776 non-null  object 
+ 4   popularity            44776 non-null  int64  
+ 5   release_date          44776 non-null  object 
+ 6   duration_ms           44776 non-null  int64  
+ 7   explicit              44776 non-null  bool   
+ 8   danceability          44776 non-null  float64
+ 9   energy                44776 non-null  float64
+ 10  key                   44776 non-null  int64  
+ 11  loudness              44776 non-null  float64
+ 12  mode                  44776 non-null  int64  
+ 13  speechiness           44776 non-null  float64
+ 14  acousticness          44776 non-null  float64
+ 15  instrumentalness      44776 non-null  float64
+ 16  liveness              44776 non-null  float64
+ 17  valence               44776 non-null  float64
+ 18  tempo                 44776 non-null  float64
+ 19  artist_genres         44776 non-null  object 
+ 20  artist_followers      44775 non-null  float64
+ 21  url                   44776 non-null  object 
+ 22  playlist_id           44776 non-null  object 
+ 23  playlist_description  30974 non-null  object 
+ 24  playlist_name         44755 non-null  object 
+ 25  playlist_url          44776 non-null  object 
+ 26  query                 44776 non-null  object 
+dtypes: bool(1), float64(10), int64(4), object(12)
+memory usage: 8.9+ MB
+None
+
+Information about the Testing Data Set
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8893 entries, 0 to 8892
+Data columns (total 27 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   id                    8893 non-null   object 
+ 1   artist_id             8893 non-null   object 
+ 2   artist                8893 non-null   object 
+ 3   name                  8893 non-null   object 
+ 4   popularity            8893 non-null   int64  
+ 5   release_date          8893 non-null   object 
+ 6   duration_ms           8893 non-null   int64  
+ 7   explicit              8893 non-null   bool   
+ 8   danceability          8893 non-null   float64
+ 9   energy                8893 non-null   float64
+ 10  key                   8893 non-null   int64  
+ 11  loudness              8893 non-null   float64
+ 12  mode                  8893 non-null   int64  
+ 13  speechiness           8893 non-null   float64
+ 14  acousticness          8893 non-null   float64
+ 15  instrumentalness      8893 non-null   float64
+ 16  liveness              8893 non-null   float64
+ 17  valence               8893 non-null   float64
+ 18  tempo                 8893 non-null   float64
+ 19  artist_genres         8893 non-null   object 
+ 20  artist_followers      8893 non-null   float64
+ 21  url                   8893 non-null   object 
+ 22  playlist_id           8893 non-null   object 
+ 23  playlist_description  6176 non-null   object 
+ 24  playlist_name         8888 non-null   object 
+ 25  playlist_url          8893 non-null   object 
+ 26  query                 8893 non-null   object 
+dtypes: bool(1), float64(10), int64(4), object(12)
+memory usage: 1.8+ MB
+None
+
+Number of NaN Values in the Training Data Set before dealing with NaN Values
+
+Column id has 0 (0.0 %) NaN value(s) 
+Column artist_id has 0 (0.0 %) NaN value(s) 
+Column artist has 0 (0.0 %) NaN value(s) 
+Column name has 0 (0.0 %) NaN value(s) 
+Column popularity has 0 (0.0 %) NaN value(s) 
+Column release_date has 0 (0.0 %) NaN value(s) 
+Column duration_ms has 0 (0.0 %) NaN value(s) 
+Column explicit has 0 (0.0 %) NaN value(s) 
+Column danceability has 0 (0.0 %) NaN value(s) 
+Column energy has 0 (0.0 %) NaN value(s) 
+Column key has 0 (0.0 %) NaN value(s) 
+Column loudness has 0 (0.0 %) NaN value(s) 
+Column mode has 0 (0.0 %) NaN value(s) 
+Column speechiness has 0 (0.0 %) NaN value(s) 
+Column acousticness has 0 (0.0 %) NaN value(s) 
+Column instrumentalness has 0 (0.0 %) NaN value(s) 
+Column liveness has 0 (0.0 %) NaN value(s) 
+Column valence has 0 (0.0 %) NaN value(s) 
+Column tempo has 0 (0.0 %) NaN value(s) 
+Column artist_genres has 0 (0.0 %) NaN value(s) 
+Column artist_followers has 1 (0.002 %) NaN value(s) 
+Column url has 0 (0.0 %) NaN value(s) 
+Column playlist_id has 0 (0.0 %) NaN value(s) 
+Column playlist_description has 13802 (30.825 %) NaN value(s) 
+Column playlist_name has 21 (0.047 %) NaN value(s) 
+Column playlist_url has 0 (0.0 %) NaN value(s) 
+Column query has 0 (0.0 %) NaN value(s) 
+
+Number of NaN Values in the Testing Data Set before filling NaN Values
+
+Column id has 0 (0.0 %) NaN value(s) 
+Column artist_id has 0 (0.0 %) NaN value(s) 
+Column artist has 0 (0.0 %) NaN value(s) 
+Column name has 0 (0.0 %) NaN value(s) 
+Column popularity has 0 (0.0 %) NaN value(s) 
+Column release_date has 0 (0.0 %) NaN value(s) 
+Column duration_ms has 0 (0.0 %) NaN value(s) 
+Column explicit has 0 (0.0 %) NaN value(s) 
+Column danceability has 0 (0.0 %) NaN value(s) 
+Column energy has 0 (0.0 %) NaN value(s) 
+Column key has 0 (0.0 %) NaN value(s) 
+Column loudness has 0 (0.0 %) NaN value(s) 
+Column mode has 0 (0.0 %) NaN value(s) 
+Column speechiness has 0 (0.0 %) NaN value(s) 
+Column acousticness has 0 (0.0 %) NaN value(s) 
+Column instrumentalness has 0 (0.0 %) NaN value(s) 
+Column liveness has 0 (0.0 %) NaN value(s) 
+Column valence has 0 (0.0 %) NaN value(s) 
+Column tempo has 0 (0.0 %) NaN value(s) 
+Column artist_genres has 0 (0.0 %) NaN value(s) 
+Column artist_followers has 0 (0.0 %) NaN value(s) 
+Column url has 0 (0.0 %) NaN value(s) 
+Column playlist_id has 0 (0.0 %) NaN value(s) 
+Column playlist_description has 2717 (30.552 %) NaN value(s) 
+Column playlist_name has 5 (0.056 %) NaN value(s) 
+Column playlist_url has 0 (0.0 %) NaN value(s) 
+Column query has 0 (0.0 %) NaN value(s) 
+
+Information about the Training Data Set after ignoring Duplicate Values
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 43084 entries, 0 to 43083
+Data columns (total 29 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   id                    43084 non-null  object 
+ 1   artist_id             43084 non-null  object 
+ 2   artist                43084 non-null  object 
+ 3   name                  43084 non-null  object 
+ 4   popularity            43084 non-null  int64  
+ 5   duration_ms           43084 non-null  int64  
+ 6   explicit              43084 non-null  bool   
+ 7   danceability          43084 non-null  float64
+ 8   energy                43084 non-null  float64
+ 9   key                   43084 non-null  int64  
+ 10  loudness              43084 non-null  float64
+ 11  mode                  43084 non-null  int64  
+ 12  speechiness           43084 non-null  float64
+ 13  acousticness          43084 non-null  float64
+ 14  instrumentalness      43084 non-null  float64
+ 15  liveness              43084 non-null  float64
+ 16  valence               43084 non-null  float64
+ 17  tempo                 43084 non-null  float64
+ 18  artist_genres         43084 non-null  object 
+ 19  artist_followers      43083 non-null  float64
+ 20  url                   43084 non-null  object 
+ 21  playlist_id           43084 non-null  object 
+ 22  playlist_description  29997 non-null  object 
+ 23  playlist_name         43064 non-null  object 
+ 24  playlist_url          43084 non-null  object 
+ 25  query                 43084 non-null  object 
+ 26  release_date_year     43084 non-null  int64  
+ 27  release_date_month    43084 non-null  int64  
+ 28  release_date_day      43084 non-null  int64  
+dtypes: bool(1), float64(10), int64(7), object(11)
+memory usage: 9.2+ MB
+None
+
+Information about the Testing Data Set after ignoring Duplicate Values
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8825 entries, 0 to 8824
+Data columns (total 29 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   id                    8825 non-null   object 
+ 1   artist_id             8825 non-null   object 
+ 2   artist                8825 non-null   object 
+ 3   name                  8825 non-null   object 
+ 4   popularity            8825 non-null   int64  
+ 5   duration_ms           8825 non-null   int64  
+ 6   explicit              8825 non-null   bool   
+ 7   danceability          8825 non-null   float64
+ 8   energy                8825 non-null   float64
+ 9   key                   8825 non-null   int64  
+ 10  loudness              8825 non-null   float64
+ 11  mode                  8825 non-null   int64  
+ 12  speechiness           8825 non-null   float64
+ 13  acousticness          8825 non-null   float64
+ 14  instrumentalness      8825 non-null   float64
+ 15  liveness              8825 non-null   float64
+ 16  valence               8825 non-null   float64
+ 17  tempo                 8825 non-null   float64
+ 18  artist_genres         8825 non-null   object 
+ 19  artist_followers      8825 non-null   float64
+ 20  url                   8825 non-null   object 
+ 21  playlist_id           8825 non-null   object 
+ 22  playlist_description  6142 non-null   object 
+ 23  playlist_name         8820 non-null   object 
+ 24  playlist_url          8825 non-null   object 
+ 25  query                 8825 non-null   object 
+ 26  release_date_year     8825 non-null   int64  
+ 27  release_date_month    8825 non-null   int64  
+ 28  release_date_day      8825 non-null   int64  
+dtypes: bool(1), float64(10), int64(7), object(11)
+memory usage: 1.9+ MB
+None
+
+Number of NaN Values in the Training Data Set after dealing with NaN Values
+
+Column id has 0 (0.0 %) NaN value(s) 
+Column artist_id has 0 (0.0 %) NaN value(s) 
+Column artist has 0 (0.0 %) NaN value(s) 
+Column name has 0 (0.0 %) NaN value(s) 
+Column popularity has 0 (0.0 %) NaN value(s) 
+Column duration_ms has 0 (0.0 %) NaN value(s) 
+Column explicit has 0 (0.0 %) NaN value(s) 
+Column danceability has 0 (0.0 %) NaN value(s) 
+Column energy has 0 (0.0 %) NaN value(s) 
+Column key has 0 (0.0 %) NaN value(s) 
+Column loudness has 0 (0.0 %) NaN value(s) 
+Column mode has 0 (0.0 %) NaN value(s) 
+Column speechiness has 0 (0.0 %) NaN value(s) 
+Column acousticness has 0 (0.0 %) NaN value(s) 
+Column instrumentalness has 0 (0.0 %) NaN value(s) 
+Column liveness has 0 (0.0 %) NaN value(s) 
+Column valence has 0 (0.0 %) NaN value(s) 
+Column tempo has 0 (0.0 %) NaN value(s) 
+Column artist_genres has 0 (0.0 %) NaN value(s) 
+Column artist_followers has 1 (0.002 %) NaN value(s) 
+Column url has 0 (0.0 %) NaN value(s) 
+Column playlist_id has 0 (0.0 %) NaN value(s) 
+Column playlist_description has 13087 (30.376 %) NaN value(s) 
+Column playlist_name has 20 (0.046 %) NaN value(s) 
+Column playlist_url has 0 (0.0 %) NaN value(s) 
+Column query has 0 (0.0 %) NaN value(s) 
+Column release_date_year has 0 (0.0 %) NaN value(s) 
+Column release_date_month has 0 (0.0 %) NaN value(s) 
+Column release_date_day has 0 (0.0 %) NaN value(s) 
+
+Number of NaN Values in the Testing Data Set after filling NaN Values
+
+Column id has 0 (0.0 %) NaN value(s) 
+Column artist_id has 0 (0.0 %) NaN value(s) 
+Column artist has 0 (0.0 %) NaN value(s) 
+Column name has 0 (0.0 %) NaN value(s) 
+Column popularity has 0 (0.0 %) NaN value(s) 
+Column duration_ms has 0 (0.0 %) NaN value(s) 
+Column explicit has 0 (0.0 %) NaN value(s) 
+Column danceability has 0 (0.0 %) NaN value(s) 
+Column energy has 0 (0.0 %) NaN value(s) 
+Column key has 0 (0.0 %) NaN value(s) 
+Column loudness has 0 (0.0 %) NaN value(s) 
+Column mode has 0 (0.0 %) NaN value(s) 
+Column speechiness has 0 (0.0 %) NaN value(s) 
+Column acousticness has 0 (0.0 %) NaN value(s) 
+Column instrumentalness has 0 (0.0 %) NaN value(s) 
+Column liveness has 0 (0.0 %) NaN value(s) 
+Column valence has 0 (0.0 %) NaN value(s) 
+Column tempo has 0 (0.0 %) NaN value(s) 
+Column artist_genres has 0 (0.0 %) NaN value(s) 
+Column artist_followers has 0 (0.0 %) NaN value(s) 
+Column url has 0 (0.0 %) NaN value(s) 
+Column playlist_id has 0 (0.0 %) NaN value(s) 
+Column playlist_description has 2683 (30.402 %) NaN value(s) 
+Column playlist_name has 5 (0.057 %) NaN value(s) 
+Column playlist_url has 0 (0.0 %) NaN value(s) 
+Column query has 0 (0.0 %) NaN value(s) 
+Column release_date_year has 0 (0.0 %) NaN value(s) 
+Column release_date_month has 0 (0.0 %) NaN value(s) 
+Column release_date_day has 0 (0.0 %) NaN value(s) 
+
+Correlation for Loudness
+ acousticness         -0.724899
+instrumentalness     -0.511669
+duration_ms          -0.150212
+mode                 -0.039109
+key                   0.027298
+release_date_month    0.070068
+release_date_day      0.104378
+artist_followers      0.120839
+liveness              0.155252
+speechiness           0.164955
+explicit              0.168268
+release_date_year     0.171954
+popularity            0.189633
+tempo                 0.264097
+valence               0.365620
+danceability          0.417483
+energy                0.838364
+loudness              1.000000
+Name: loudness, dtype: float64
+Number of NaN Values in the Training Data Set after2 dealing with NaN Values
+
+Column popularity has 0 (0.0 %) NaN value(s) 
+Column explicit has 0 (0.0 %) NaN value(s) 
+Column danceability has 0 (0.0 %) NaN value(s) 
+Column energy has 0 (0.0 %) NaN value(s) 
+Column loudness has 0 (0.0 %) NaN value(s) 
+Column speechiness has 0 (0.0 %) NaN value(s) 
+Column acousticness has 0 (0.0 %) NaN value(s) 
+Column instrumentalness has 0 (0.0 %) NaN value(s) 
+Column liveness has 0 (0.0 %) NaN value(s) 
+Column valence has 0 (0.0 %) NaN value(s) 
+Column tempo has 0 (0.0 %) NaN value(s) 
+Column artist_genres has 0 (0.0 %) NaN value(s) 
+Column release_date_year has 0 (0.0 %) NaN value(s) 
+
+Number of NaN Values in the Testing Data Set after2 filling NaN Values
+
+Column popularity has 0 (0.0 %) NaN value(s) 
+Column explicit has 0 (0.0 %) NaN value(s) 
+Column danceability has 0 (0.0 %) NaN value(s) 
+Column energy has 0 (0.0 %) NaN value(s) 
+Column loudness has 0 (0.0 %) NaN value(s) 
+Column speechiness has 0 (0.0 %) NaN value(s) 
+Column acousticness has 0 (0.0 %) NaN value(s) 
+Column instrumentalness has 0 (0.0 %) NaN value(s) 
+Column liveness has 0 (0.0 %) NaN value(s) 
+Column valence has 0 (0.0 %) NaN value(s) 
+Column tempo has 0 (0.0 %) NaN value(s) 
+Column artist_genres has 0 (0.0 %) NaN value(s) 
+Column release_date_year has 0 (0.0 %) NaN value(s) 
+
+Epoch 1/10000
+
+ 1/26 [>.............................] - ETA: 8s - loss: 121.5390 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 98.0499 - accuracy: 0.0000e+00 
+26/26 [==============================] - 1s 8ms/step - loss: 94.8331 - accuracy: 0.0000e+00 - val_loss: 56.4502 - val_accuracy: 0.0000e+00
+Epoch 2/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 65.4609 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 29.6315 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 28.1365 - accuracy: 0.0000e+00 - val_loss: 12.7280 - val_accuracy: 0.0000e+00
+Epoch 3/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 12.7499 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 10.9509 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 10.9332 - accuracy: 0.0000e+00 - val_loss: 9.8754 - val_accuracy: 0.0000e+00
+Epoch 4/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 9.2525 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 9.4546 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 9.4230 - accuracy: 0.0000e+00 - val_loss: 8.9469 - val_accuracy: 0.0000e+00
+Epoch 5/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 9.6459 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 8.7707 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 8.7345 - accuracy: 0.0000e+00 - val_loss: 8.4047 - val_accuracy: 0.0000e+00
+Epoch 6/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 8.5697 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 8.2243 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 8.2143 - accuracy: 0.0000e+00 - val_loss: 7.9534 - val_accuracy: 0.0000e+00
+Epoch 7/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 7.0174 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 7.7502 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 7.7820 - accuracy: 0.0000e+00 - val_loss: 7.5883 - val_accuracy: 0.0000e+00
+Epoch 8/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.6161 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 7.4237 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 7.4263 - accuracy: 0.0000e+00 - val_loss: 7.2799 - val_accuracy: 0.0000e+00
+Epoch 9/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 7.5572 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 7.1246 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 7.1323 - accuracy: 0.0000e+00 - val_loss: 7.0110 - val_accuracy: 0.0000e+00
+Epoch 10/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.4863 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 6.9078 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.8870 - accuracy: 0.0000e+00 - val_loss: 6.8104 - val_accuracy: 0.0000e+00
+Epoch 11/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.4848 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 6.6746 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.6858 - accuracy: 0.0000e+00 - val_loss: 6.6070 - val_accuracy: 0.0000e+00
+Epoch 12/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.1201 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 6.5298 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.5188 - accuracy: 0.0000e+00 - val_loss: 6.4483 - val_accuracy: 0.0000e+00
+Epoch 13/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.9332 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 6.3967 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.3732 - accuracy: 0.0000e+00 - val_loss: 6.3343 - val_accuracy: 0.0000e+00
+Epoch 14/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.6788 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 6.2635 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.2471 - accuracy: 0.0000e+00 - val_loss: 6.2083 - val_accuracy: 0.0000e+00
+Epoch 15/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.1730 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 6.1470 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.1501 - accuracy: 0.0000e+00 - val_loss: 6.1065 - val_accuracy: 0.0000e+00
+Epoch 16/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 7.2833 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 6.0485 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 6.0402 - accuracy: 0.0000e+00 - val_loss: 6.0267 - val_accuracy: 0.0000e+00
+Epoch 17/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.6412 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.9448 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.9391 - accuracy: 0.0000e+00 - val_loss: 5.8991 - val_accuracy: 0.0000e+00
+Epoch 18/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 6.4233 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.8333 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.8395 - accuracy: 0.0000e+00 - val_loss: 5.8124 - val_accuracy: 0.0000e+00
+Epoch 19/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.8386 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 5.7474 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.7464 - accuracy: 0.0000e+00 - val_loss: 5.7430 - val_accuracy: 0.0000e+00
+Epoch 20/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.5865 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.6681 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.6647 - accuracy: 0.0000e+00 - val_loss: 5.6469 - val_accuracy: 0.0000e+00
+Epoch 21/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.6336 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.6056 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.6025 - accuracy: 0.0000e+00 - val_loss: 5.5883 - val_accuracy: 0.0000e+00
+Epoch 22/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.7512 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.5660 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.5486 - accuracy: 0.0000e+00 - val_loss: 5.5472 - val_accuracy: 0.0000e+00
+Epoch 23/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.8246 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.4586 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.4578 - accuracy: 0.0000e+00 - val_loss: 5.5055 - val_accuracy: 0.0000e+00
+Epoch 24/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.2679 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.4298 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.4326 - accuracy: 0.0000e+00 - val_loss: 5.4965 - val_accuracy: 0.0000e+00
+Epoch 25/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.5302 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.3868 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.3968 - accuracy: 0.0000e+00 - val_loss: 5.4368 - val_accuracy: 0.0000e+00
+Epoch 26/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.2635 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.3808 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.3850 - accuracy: 0.0000e+00 - val_loss: 5.3578 - val_accuracy: 0.0000e+00
+Epoch 27/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.0528 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 5.2862 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.2806 - accuracy: 0.0000e+00 - val_loss: 5.3346 - val_accuracy: 0.0000e+00
+Epoch 28/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1039 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.2547 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.2448 - accuracy: 0.0000e+00 - val_loss: 5.3116 - val_accuracy: 0.0000e+00
+Epoch 29/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6735 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.2207 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.2113 - accuracy: 0.0000e+00 - val_loss: 5.2711 - val_accuracy: 0.0000e+00
+Epoch 30/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1392 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.1836 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.1801 - accuracy: 0.0000e+00 - val_loss: 5.2544 - val_accuracy: 0.0000e+00
+Epoch 31/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1601 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.1297 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.1364 - accuracy: 0.0000e+00 - val_loss: 5.2459 - val_accuracy: 0.0000e+00
+Epoch 32/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1134 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.1129 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.1106 - accuracy: 0.0000e+00 - val_loss: 5.2247 - val_accuracy: 0.0000e+00
+Epoch 33/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.5112 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.1192 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.1051 - accuracy: 0.0000e+00 - val_loss: 5.2302 - val_accuracy: 0.0000e+00
+Epoch 34/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.3377 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.0407 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.0710 - accuracy: 0.0000e+00 - val_loss: 5.2027 - val_accuracy: 0.0000e+00
+Epoch 35/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.3822 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 5.0697 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.0627 - accuracy: 0.0000e+00 - val_loss: 5.1390 - val_accuracy: 0.0000e+00
+Epoch 36/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.2000 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.0017 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.0167 - accuracy: 0.0000e+00 - val_loss: 5.1461 - val_accuracy: 0.0000e+00
+Epoch 37/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4434 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 5.0009 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 5.0096 - accuracy: 0.0000e+00 - val_loss: 5.1086 - val_accuracy: 0.0000e+00
+Epoch 38/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.3570 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.9857 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.9944 - accuracy: 0.0000e+00 - val_loss: 5.1353 - val_accuracy: 0.0000e+00
+Epoch 39/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1770 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.9784 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.9794 - accuracy: 0.0000e+00 - val_loss: 5.0626 - val_accuracy: 0.0000e+00
+Epoch 40/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.0897 - accuracy: 0.0000e+00
+22/26 [========================>.....] - ETA: 0s - loss: 4.9403 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.9395 - accuracy: 0.0000e+00 - val_loss: 5.0535 - val_accuracy: 0.0000e+00
+Epoch 41/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5242 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.9429 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.9213 - accuracy: 0.0000e+00 - val_loss: 5.0352 - val_accuracy: 0.0000e+00
+Epoch 42/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4178 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.8695 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.9015 - accuracy: 0.0000e+00 - val_loss: 5.0137 - val_accuracy: 0.0000e+00
+Epoch 43/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.8311 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.8921 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 4ms/step - loss: 4.8890 - accuracy: 0.0000e+00 - val_loss: 5.0218 - val_accuracy: 0.0000e+00
+Epoch 44/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9704 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.8766 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8683 - accuracy: 0.0000e+00 - val_loss: 5.0157 - val_accuracy: 0.0000e+00
+Epoch 45/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1426 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.8585 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8614 - accuracy: 0.0000e+00 - val_loss: 4.9871 - val_accuracy: 0.0000e+00
+Epoch 46/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9285 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.8538 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8418 - accuracy: 0.0000e+00 - val_loss: 5.0418 - val_accuracy: 0.0000e+00
+Epoch 47/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1144 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.8423 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8417 - accuracy: 0.0000e+00 - val_loss: 5.0127 - val_accuracy: 0.0000e+00
+Epoch 48/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.3393 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.8266 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8215 - accuracy: 0.0000e+00 - val_loss: 5.0306 - val_accuracy: 0.0000e+00
+Epoch 49/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.1545 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.8709 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8479 - accuracy: 0.0000e+00 - val_loss: 5.0132 - val_accuracy: 0.0000e+00
+Epoch 50/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1488 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.7982 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7984 - accuracy: 0.0000e+00 - val_loss: 4.9488 - val_accuracy: 0.0000e+00
+Epoch 51/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9163 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.8070 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.8073 - accuracy: 0.0000e+00 - val_loss: 4.9557 - val_accuracy: 0.0000e+00
+Epoch 52/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.2401 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.7858 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7696 - accuracy: 0.0000e+00 - val_loss: 4.9265 - val_accuracy: 0.0000e+00
+Epoch 53/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4365 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.7971 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 4ms/step - loss: 4.7657 - accuracy: 0.0000e+00 - val_loss: 4.9177 - val_accuracy: 0.0000e+00
+Epoch 54/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3475 - accuracy: 0.0000e+00
+22/26 [========================>.....] - ETA: 0s - loss: 4.7553 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7410 - accuracy: 0.0000e+00 - val_loss: 4.8982 - val_accuracy: 0.0000e+00
+Epoch 55/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.8723 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.7051 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7289 - accuracy: 0.0000e+00 - val_loss: 4.8925 - val_accuracy: 0.0000e+00
+Epoch 56/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0035 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.7212 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7288 - accuracy: 0.0000e+00 - val_loss: 4.8918 - val_accuracy: 0.0000e+00
+Epoch 57/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5342 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.7363 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 4ms/step - loss: 4.7432 - accuracy: 0.0000e+00 - val_loss: 4.9312 - val_accuracy: 0.0000e+00
+Epoch 58/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5024 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.7288 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7318 - accuracy: 0.0000e+00 - val_loss: 4.8909 - val_accuracy: 0.0000e+00
+Epoch 59/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6020 - accuracy: 0.0000e+00
+22/26 [========================>.....] - ETA: 0s - loss: 4.7220 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 4ms/step - loss: 4.7387 - accuracy: 0.0000e+00 - val_loss: 4.9040 - val_accuracy: 0.0000e+00
+Epoch 60/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9469 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.7038 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.7106 - accuracy: 0.0000e+00 - val_loss: 4.9037 - val_accuracy: 0.0000e+00
+Epoch 61/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6887 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.7235 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6995 - accuracy: 0.0000e+00 - val_loss: 4.9124 - val_accuracy: 0.0000e+00
+Epoch 62/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4306 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.6578 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6712 - accuracy: 0.0000e+00 - val_loss: 4.8552 - val_accuracy: 0.0000e+00
+Epoch 63/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3312 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.6500 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6626 - accuracy: 0.0000e+00 - val_loss: 4.8984 - val_accuracy: 0.0000e+00
+Epoch 64/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.5599 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.6740 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 4ms/step - loss: 4.6824 - accuracy: 0.0000e+00 - val_loss: 4.8610 - val_accuracy: 0.0000e+00
+Epoch 65/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4320 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.6325 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6477 - accuracy: 0.0000e+00 - val_loss: 4.8509 - val_accuracy: 0.0000e+00
+Epoch 66/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2522 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.6464 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6436 - accuracy: 0.0000e+00 - val_loss: 4.9037 - val_accuracy: 0.0000e+00
+Epoch 67/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5948 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.6272 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6239 - accuracy: 0.0000e+00 - val_loss: 4.8473 - val_accuracy: 0.0000e+00
+Epoch 68/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6729 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.6208 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6070 - accuracy: 0.0000e+00 - val_loss: 4.8773 - val_accuracy: 0.0000e+00
+Epoch 69/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9096 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.6423 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6437 - accuracy: 0.0000e+00 - val_loss: 4.8547 - val_accuracy: 0.0000e+00
+Epoch 70/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4501 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.6532 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6457 - accuracy: 0.0000e+00 - val_loss: 4.9343 - val_accuracy: 0.0000e+00
+Epoch 71/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9609 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.6209 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.6253 - accuracy: 0.0000e+00 - val_loss: 4.8415 - val_accuracy: 0.0000e+00
+Epoch 72/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2491 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5785 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5752 - accuracy: 0.0000e+00 - val_loss: 4.8202 - val_accuracy: 0.0000e+00
+Epoch 73/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4326 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.5871 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5914 - accuracy: 0.0000e+00 - val_loss: 4.8486 - val_accuracy: 0.0000e+00
+Epoch 74/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6789 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5719 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5910 - accuracy: 0.0000e+00 - val_loss: 4.8239 - val_accuracy: 0.0000e+00
+Epoch 75/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3978 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5376 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5475 - accuracy: 0.0000e+00 - val_loss: 4.8703 - val_accuracy: 0.0000e+00
+Epoch 76/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.0615 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.5511 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5577 - accuracy: 0.0000e+00 - val_loss: 4.8203 - val_accuracy: 0.0000e+00
+Epoch 77/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.0384 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5514 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5430 - accuracy: 0.0000e+00 - val_loss: 4.8124 - val_accuracy: 0.0000e+00
+Epoch 78/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9712 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5580 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5559 - accuracy: 0.0000e+00 - val_loss: 4.8050 - val_accuracy: 0.0000e+00
+Epoch 79/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6641 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.5358 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5331 - accuracy: 0.0000e+00 - val_loss: 4.8855 - val_accuracy: 0.0000e+00
+Epoch 80/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9468 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.5384 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5417 - accuracy: 0.0000e+00 - val_loss: 4.8115 - val_accuracy: 0.0000e+00
+Epoch 81/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1033 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.5236 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5200 - accuracy: 0.0000e+00 - val_loss: 4.7886 - val_accuracy: 0.0000e+00
+Epoch 82/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5296 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5002 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5059 - accuracy: 0.0000e+00 - val_loss: 4.8346 - val_accuracy: 0.0000e+00
+Epoch 83/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1977 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.5202 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5199 - accuracy: 0.0000e+00 - val_loss: 4.8420 - val_accuracy: 0.0000e+00
+Epoch 84/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4566 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.5134 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.5087 - accuracy: 0.0000e+00 - val_loss: 4.8532 - val_accuracy: 0.0000e+00
+Epoch 85/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0699 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4790 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4960 - accuracy: 0.0000e+00 - val_loss: 4.8207 - val_accuracy: 0.0000e+00
+Epoch 86/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9593 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4960 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4859 - accuracy: 0.0000e+00 - val_loss: 4.8498 - val_accuracy: 0.0000e+00
+Epoch 87/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6317 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4579 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4629 - accuracy: 0.0000e+00 - val_loss: 4.8035 - val_accuracy: 0.0000e+00
+Epoch 88/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1539 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4412 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4562 - accuracy: 0.0000e+00 - val_loss: 4.7819 - val_accuracy: 0.0000e+00
+Epoch 89/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3231 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4421 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4577 - accuracy: 0.0000e+00 - val_loss: 4.8228 - val_accuracy: 0.0000e+00
+Epoch 90/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4864 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4853 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4649 - accuracy: 0.0000e+00 - val_loss: 4.8052 - val_accuracy: 0.0000e+00
+Epoch 91/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.3292 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4709 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4507 - accuracy: 0.0000e+00 - val_loss: 4.8372 - val_accuracy: 0.0000e+00
+Epoch 92/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2661 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4632 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4626 - accuracy: 0.0000e+00 - val_loss: 4.8124 - val_accuracy: 0.0000e+00
+Epoch 93/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3203 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4556 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4591 - accuracy: 0.0000e+00 - val_loss: 4.8248 - val_accuracy: 0.0000e+00
+Epoch 94/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.9625 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4424 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4408 - accuracy: 0.0000e+00 - val_loss: 4.8113 - val_accuracy: 0.0000e+00
+Epoch 95/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3377 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4377 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4328 - accuracy: 0.0000e+00 - val_loss: 4.8148 - val_accuracy: 0.0000e+00
+Epoch 96/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2232 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4501 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4389 - accuracy: 0.0000e+00 - val_loss: 4.8135 - val_accuracy: 0.0000e+00
+Epoch 97/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6976 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4343 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4456 - accuracy: 0.0000e+00 - val_loss: 4.7897 - val_accuracy: 0.0000e+00
+Epoch 98/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0932 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4203 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4120 - accuracy: 0.0000e+00 - val_loss: 4.8354 - val_accuracy: 0.0000e+00
+Epoch 99/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3168 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4130 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4144 - accuracy: 0.0000e+00 - val_loss: 4.8104 - val_accuracy: 0.0000e+00
+Epoch 100/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0119 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4146 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4120 - accuracy: 0.0000e+00 - val_loss: 4.8451 - val_accuracy: 0.0000e+00
+Epoch 101/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3812 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.4479 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4244 - accuracy: 0.0000e+00 - val_loss: 4.8545 - val_accuracy: 0.0000e+00
+Epoch 102/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6046 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4028 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4185 - accuracy: 0.0000e+00 - val_loss: 4.8004 - val_accuracy: 0.0000e+00
+Epoch 103/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1893 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.4883 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4927 - accuracy: 0.0000e+00 - val_loss: 4.8639 - val_accuracy: 0.0000e+00
+Epoch 104/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4700 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3703 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3872 - accuracy: 0.0000e+00 - val_loss: 4.8709 - val_accuracy: 0.0000e+00
+Epoch 105/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6578 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.3880 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3977 - accuracy: 0.0000e+00 - val_loss: 4.8066 - val_accuracy: 0.0000e+00
+Epoch 106/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5379 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3558 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3646 - accuracy: 0.0000e+00 - val_loss: 4.7649 - val_accuracy: 0.0000e+00
+Epoch 107/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.9053 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3914 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3916 - accuracy: 0.0000e+00 - val_loss: 4.7725 - val_accuracy: 0.0000e+00
+Epoch 108/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2130 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3749 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3644 - accuracy: 0.0000e+00 - val_loss: 4.7749 - val_accuracy: 0.0000e+00
+Epoch 109/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5445 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3539 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3708 - accuracy: 0.0000e+00 - val_loss: 4.8043 - val_accuracy: 0.0000e+00
+Epoch 110/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.7660 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3899 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3613 - accuracy: 0.0000e+00 - val_loss: 4.7919 - val_accuracy: 0.0000e+00
+Epoch 111/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.7912 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.3216 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3210 - accuracy: 0.0000e+00 - val_loss: 4.7942 - val_accuracy: 0.0000e+00
+Epoch 112/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6983 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.3954 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3980 - accuracy: 0.0000e+00 - val_loss: 4.9657 - val_accuracy: 0.0000e+00
+Epoch 113/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4835 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.4159 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.4206 - accuracy: 0.0000e+00 - val_loss: 4.7504 - val_accuracy: 0.0000e+00
+Epoch 114/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2025 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3448 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3313 - accuracy: 0.0000e+00 - val_loss: 4.7960 - val_accuracy: 0.0000e+00
+Epoch 115/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.6515 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3212 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3215 - accuracy: 0.0000e+00 - val_loss: 4.8071 - val_accuracy: 0.0000e+00
+Epoch 116/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5325 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.3222 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3334 - accuracy: 0.0000e+00 - val_loss: 4.8363 - val_accuracy: 0.0000e+00
+Epoch 117/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2995 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3226 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3201 - accuracy: 0.0000e+00 - val_loss: 4.9417 - val_accuracy: 0.0000e+00
+Epoch 118/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 5.2411 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3931 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3774 - accuracy: 0.0000e+00 - val_loss: 4.7590 - val_accuracy: 0.0000e+00
+Epoch 119/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.8311 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3234 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3142 - accuracy: 0.0000e+00 - val_loss: 4.7861 - val_accuracy: 0.0000e+00
+Epoch 120/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5322 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3056 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.3293 - accuracy: 0.0000e+00 - val_loss: 4.8196 - val_accuracy: 0.0000e+00
+Epoch 121/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5171 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2976 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2916 - accuracy: 0.0000e+00 - val_loss: 4.7533 - val_accuracy: 0.0000e+00
+Epoch 122/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.6099 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2903 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2846 - accuracy: 0.0000e+00 - val_loss: 4.7868 - val_accuracy: 0.0000e+00
+Epoch 123/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.7761 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.3010 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2756 - accuracy: 0.0000e+00 - val_loss: 4.7781 - val_accuracy: 0.0000e+00
+Epoch 124/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4583 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2717 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2648 - accuracy: 0.0000e+00 - val_loss: 4.7667 - val_accuracy: 0.0000e+00
+Epoch 125/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4436 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2700 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2715 - accuracy: 0.0000e+00 - val_loss: 4.7539 - val_accuracy: 0.0000e+00
+Epoch 126/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.9724 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.2369 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2682 - accuracy: 0.0000e+00 - val_loss: 4.7934 - val_accuracy: 0.0000e+00
+Epoch 127/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5277 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2771 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2714 - accuracy: 0.0000e+00 - val_loss: 4.8011 - val_accuracy: 0.0000e+00
+Epoch 128/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3649 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2687 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2554 - accuracy: 0.0000e+00 - val_loss: 4.7590 - val_accuracy: 0.0000e+00
+Epoch 129/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.3362 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2594 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2357 - accuracy: 0.0000e+00 - val_loss: 4.7675 - val_accuracy: 0.0000e+00
+Epoch 130/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.8027 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2742 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2701 - accuracy: 0.0000e+00 - val_loss: 4.7580 - val_accuracy: 0.0000e+00
+Epoch 131/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.9954 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2289 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2355 - accuracy: 0.0000e+00 - val_loss: 4.7982 - val_accuracy: 0.0000e+00
+Epoch 132/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.8171 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2713 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2524 - accuracy: 0.0000e+00 - val_loss: 4.7545 - val_accuracy: 0.0000e+00
+Epoch 133/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0097 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2508 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2432 - accuracy: 0.0000e+00 - val_loss: 4.7324 - val_accuracy: 0.0000e+00
+Epoch 134/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1935 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2399 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2373 - accuracy: 0.0000e+00 - val_loss: 4.8080 - val_accuracy: 0.0000e+00
+Epoch 135/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2276 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2651 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2527 - accuracy: 0.0000e+00 - val_loss: 4.8325 - val_accuracy: 0.0000e+00
+Epoch 136/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.4973 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.2187 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2313 - accuracy: 0.0000e+00 - val_loss: 4.7328 - val_accuracy: 0.0000e+00
+Epoch 137/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.8827 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.1970 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2104 - accuracy: 0.0000e+00 - val_loss: 4.7592 - val_accuracy: 0.0000e+00
+Epoch 138/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.7624 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1793 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2134 - accuracy: 0.0000e+00 - val_loss: 4.7603 - val_accuracy: 0.0000e+00
+Epoch 139/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.8070 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1988 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2065 - accuracy: 0.0000e+00 - val_loss: 4.7467 - val_accuracy: 0.0000e+00
+Epoch 140/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5865 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1614 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1965 - accuracy: 0.0000e+00 - val_loss: 4.7824 - val_accuracy: 0.0000e+00
+Epoch 141/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.7999 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2551 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.2547 - accuracy: 0.0000e+00 - val_loss: 4.7639 - val_accuracy: 0.0000e+00
+Epoch 142/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.8988 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.2009 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1987 - accuracy: 0.0000e+00 - val_loss: 4.7363 - val_accuracy: 0.0000e+00
+Epoch 143/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1240 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1802 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1854 - accuracy: 0.0000e+00 - val_loss: 4.7446 - val_accuracy: 0.0000e+00
+Epoch 144/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.7899 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1733 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1794 - accuracy: 0.0000e+00 - val_loss: 4.8982 - val_accuracy: 0.0000e+00
+Epoch 145/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2120 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1884 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1808 - accuracy: 0.0000e+00 - val_loss: 4.7837 - val_accuracy: 0.0000e+00
+Epoch 146/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0468 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.1964 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1945 - accuracy: 0.0000e+00 - val_loss: 4.8160 - val_accuracy: 0.0000e+00
+Epoch 147/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0145 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.1780 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1715 - accuracy: 0.0000e+00 - val_loss: 4.8049 - val_accuracy: 0.0000e+00
+Epoch 148/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5186 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1662 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1555 - accuracy: 0.0000e+00 - val_loss: 4.7911 - val_accuracy: 0.0000e+00
+Epoch 149/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.5606 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1342 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1531 - accuracy: 0.0000e+00 - val_loss: 4.7888 - val_accuracy: 0.0000e+00
+Epoch 150/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.2015 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1880 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1928 - accuracy: 0.0000e+00 - val_loss: 4.8795 - val_accuracy: 0.0000e+00
+Epoch 151/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.5152 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.1679 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1915 - accuracy: 0.0000e+00 - val_loss: 4.7689 - val_accuracy: 0.0000e+00
+Epoch 152/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0412 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.1784 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1739 - accuracy: 0.0000e+00 - val_loss: 4.7530 - val_accuracy: 0.0000e+00
+Epoch 153/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1540 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1533 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1573 - accuracy: 0.0000e+00 - val_loss: 4.8071 - val_accuracy: 0.0000e+00
+Epoch 154/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0678 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1814 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1786 - accuracy: 0.0000e+00 - val_loss: 4.7886 - val_accuracy: 0.0000e+00
+Epoch 155/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.1285 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1423 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1357 - accuracy: 0.0000e+00 - val_loss: 4.7492 - val_accuracy: 0.0000e+00
+Epoch 156/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.9840 - accuracy: 0.0000e+00
+24/26 [==========================>...] - ETA: 0s - loss: 4.1214 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1194 - accuracy: 0.0000e+00 - val_loss: 4.7605 - val_accuracy: 0.0000e+00
+Epoch 157/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 3.9210 - accuracy: 0.0000e+00
+25/26 [===========================>..] - ETA: 0s - loss: 4.1404 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1546 - accuracy: 0.0000e+00 - val_loss: 4.7834 - val_accuracy: 0.0000e+00
+Epoch 158/10000
+
+ 1/26 [>.............................] - ETA: 0s - loss: 4.0909 - accuracy: 0.0000e+00
+23/26 [=========================>....] - ETA: 0s - loss: 4.1555 - accuracy: 0.0000e+00
+26/26 [==============================] - 0s 3ms/step - loss: 4.1641 - accuracy: 0.0000e+00 - val_loss: 4.7679 - val_accuracy: 0.0000e+00
+Epoch 00158: early stopping
+
+Neural Network - Mean Absolute Error (MAE) :
+ 1.6577391135526884
+
+Neural Network - Mean Squared Error (MSE) :
+ 5.076282240881297
+
+Neural Network - Root Mean Square Error (RMSE) :
+ 2.253060638527356
+
+Neural Network - R2 Score :
+ 0.8748374898282059
+Training Data Set before Scaling
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 38775 entries, 0 to 38774
+Data columns (total 12 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   popularity         38775 non-null  object
+ 1   explicit           38775 non-null  object
+ 2   danceability       38775 non-null  object
+ 3   energy             38775 non-null  object
+ 4   speechiness        38775 non-null  object
+ 5   acousticness       38775 non-null  object
+ 6   instrumentalness   38775 non-null  object
+ 7   liveness           38775 non-null  object
+ 8   valence            38775 non-null  object
+ 9   tempo              38775 non-null  object
+ 10  artist_genres      38775 non-null  object
+ 11  release_date_year  38775 non-null  object
+dtypes: object(12)
+memory usage: 3.6+ MB
+None
+
+Training Data Set before Scaling
+
+                     count   unique      top     freq
+popularity           38775      100        0     6014
+explicit             38775        2    False    34627
+danceability       38775.0    979.0    0.596    103.0
+energy             38775.0   1978.0    0.939     85.0
+speechiness        38775.0   1169.0   0.0339    131.0
+acousticness       38775.0   4237.0    0.995    209.0
+instrumentalness   38775.0   5065.0      0.0  10721.0
+liveness           38775.0   1622.0    0.111    512.0
+valence            38775.0   1601.0    0.961     77.0
+tempo              38775.0  26842.0  174.023     16.0
+artist_genres        38775       48       39     7800
+release_date_year    38775       71     2021     4260
+
+Testing Data Set before Scaling
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7942 entries, 0 to 7941
+Data columns (total 12 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   popularity         7942 non-null   object
+ 1   explicit           7942 non-null   object
+ 2   danceability       7942 non-null   object
+ 3   energy             7942 non-null   object
+ 4   speechiness        7942 non-null   object
+ 5   acousticness       7942 non-null   object
+ 6   instrumentalness   7942 non-null   object
+ 7   liveness           7942 non-null   object
+ 8   valence            7942 non-null   object
+ 9   tempo              7942 non-null   object
+ 10  artist_genres      7942 non-null   object
+ 11  release_date_year  7942 non-null   object
+dtypes: object(12)
+memory usage: 744.7+ KB
+None
+
+Testing Data Set before Scaling
+
+                    count  unique      top    freq
+popularity           7942      80        0    1179
+explicit             7942       2    False    7390
+danceability       7942.0   867.0    0.612    28.0
+energy             7942.0  1343.0    0.939    23.0
+speechiness        7942.0   931.0   0.0364    38.0
+acousticness       7942.0  2727.0    0.993    48.0
+instrumentalness   7942.0  2963.0      0.0  1960.0
+liveness           7942.0  1007.0    0.111   110.0
+valence            7942.0  1324.0    0.961    22.0
+tempo              7942.0  7088.0  174.028     6.0
+artist_genres        7942      45       33    1690
+release_date_year    7942      66     2021     848
+
+
+Random Forest Regressor - Mean Squared Error (MSE) from Cross Validation:
+ [4.17396339 4.27635781 4.33212575 4.37007134 4.4098394 ]
+
+Random Forest Regressor - R2 Score from Cross Validation:
+ [0.88963626 0.87576482 0.88051305 0.87967785 0.87945343]
+
+Random Forest Regressor - Error Values for Predicted Values:
+
+Mean Absolute Error (MAE) :
+ 1.5618058587257617
+
+Mean Squared Error (MSE) :
+ 4.4612442852317935
+
+Root Mean Square Error (RMSE) :
+ 2.112165780716986
+
+R2 Score :
+ 0.889030182732353
+
+Exporting Decision Tree to SVG File:
+ /home/raychani1/Documents/Programming/Source_Codes/STU_-_FEI/Waiting_for_GitHub/Masters/Year_1./1._Term/Machine_Learning_and_Neural_Networks_I-SUNS/I-SUNS_Support_Vector_Machine_Project/output/plots/decision_trees/decision_tree.svg
+
+Random Forest Regressor Feature Importance:
+Feature energy: 0.8338375191705992
+Feature instrumentalness: 0.03529426358218532
+Feature release_date_year: 0.026503656515352844
+Feature danceability: 0.015750342350729668
+Feature speechiness: 0.015243671765562142
+Feature valence: 0.014848327887322148
+Feature acousticness: 0.014362140266718719
+Feature tempo: 0.01320078253366416
+Feature liveness: 0.01223401589071116
+Feature popularity: 0.010373246846301113
+Feature artist_genres: 0.008003874431146328
+Feature explicit: 0.0003481587597071529
+[LibSVM]..........................*....*
+optimization finished, #iter = 30583
+obj = -60617.448029, rho = 9.663559
+nSV = 36991, nBSV = 36224
+..........................................................................*......*
+optimization finished, #iter = 25414
+obj = -49003.717958, rho = 9.687864
+nSV = 29607, nBSV = 28934
+*......*
+optimization finished, #iter = 25887
+obj = -48946.924511, rho = 9.637463
+nSV = 29564, nBSV = 28856
+...*...*
+optimization finished, #iter = 24910
+obj = -48847.863691, rho = 9.669181
+nSV = 29612, nBSV = 28939
+...................*......*
+optimization finished, #iter = 25403
+obj = -48870.859412, rho = 9.611357
+nSV = 29624, nBSV = 28940
+..*.....*.*
+optimization finished, #iter = 25834
+obj = -48842.101807, rho = 9.602778
+nSV = 29562, nBSV = 28856
+
+Support Vector Machine - Mean Squared Error (MSE) from Cross Validation:
+ [5.10440214 5.13760479 5.2198723  5.06404368 5.17586937]
+
+Support Vector Machine - R2 Score from Cross Validation:
+ [0.86503453 0.85074418 0.85602758 0.86057055 0.85851337]
+
+Support Vector Machine - Error Values for Predicted Values:
+
+Mean Absolute Error (MAE) :
+ 1.6775507309368922
+
+Mean Squared Error (MSE) :
+ 5.469948907128103
+
+Root Mean Square Error (RMSE) :
+ 2.338792189812533
+
+R2 Score :
+ 0.863939476998213
+Bagging Regression
+
+..........................................................................................................................................*........*
+optimization finished, #iter = 28733
+obj = -59901.434067, rho = 9.523090
+nSV = 23340, nBSV = 16596
+..............*..........*.*
+optimization finished, #iter = 29191
+obj = -60187.013371, rho = 9.931117
+nSV = 23200, nBSV = 16487
+......*............*
+optimization finished, #iter = 30272
+obj = -59930.362151, rho = 9.684931
+nSV = 23465, nBSV = 16756
+*
+optimization finished, #iter = 29307
+obj = -59613.747566, rho = 9.650504
+nSV = 23436, nBSV = 16553
+.....*....*.......*..*
+optimization finished, #iter = 29204
+obj = -59583.016451, rho = 9.709270
+nSV = 23411, nBSV = 16650
+*
+optimization finished, #iter = 29086
+obj = -59821.149228, rho = 9.852303
+nSV = 23443, nBSV = 16599
+.........*.......*
+optimization finished, #iter = 28801
+obj = -59624.714023, rho = 9.936554
+nSV = 23336, nBSV = 16486
+...*......*
+optimization finished, #iter = 29600
+obj = -60068.471555, rho = 9.659731
+nSV = 23349, nBSV = 16447
+.......................................*......*
+optimization finished, #iter = 29984
+obj = -59865.996060, rho = 9.572721
+nSV = 23410, nBSV = 16744
+.......*.....*
+optimization finished, #iter = 28738
+obj = -59596.713207, rho = 9.533903
+nSV = 23260, nBSV = 16570
+
+Bagging Regression Completed in: 0:01:51.206870
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................*.........................*.....*.............*.*
+optimization finished, #iter = 23983
+....obj = -47944.810415, rho = 9.726467
+nSV = 18672, nBSV = 13267
+.....*.......*.
+optimization finished, #iter = 23382
+obj = -48471.307933, rho = 9.465303
+nSV = 18627, nBSV = 13332
+.........*..*.........*.*
+optimization finished, #iter = 23952
+obj = -47872.162297, rho = 9.543850
+nSV = 18686, nBSV = 13331
+...*
+optimization finished, #iter = 23166
+...*..obj = -47837.207216, rho = 9.581022
+nSV = 18693, nBSV = 13272
+......*.
+optimization finished, #iter = 23762
+obj = -48104.653162, rho = 9.734619
+nSV = 18787, nBSV = 13340
+*....*
+optimization finished, #iter = 23656
+......obj = -47604.707744, rho = 9.379513
+nSV = 18727, nBSV = 13286
+..*...............*
+optimization finished, #iter = 23816
+..obj = -47947.222209, rho = 9.698064
+nSV = 18698, nBSV = 13121
+.*.*
+optimization finished, #iter = 23911
+*..
+optimization finished, #iter = 22947
+.obj = -48015.088821, rho = 9.770868
+nSV = 18767, nBSV = 13402
+.obj = -48351.448504, rho = 9.540236
+nSV = 18687, nBSV = 13357
+...*
+optimization finished, #iter = 23294
+obj = -48378.188866, rho = 9.571087
+nSV = 18727, nBSV = 13326
+......*...........*
+optimization finished, #iter = 23460
+.....obj = -48259.967504, rho = 9.859213
+nSV = 18713, nBSV = 13211
+............*..*
+optimization finished, #iter = 23188
+...obj = -47884.766354, rho = 9.640048
+nSV = 18803, nBSV = 13353
+....*.....*.............*..*
+optimization finished, #iter = 23548
+obj = -48343.807957, rho = 9.755280
+nSV = 18743, nBSV = 13281
+........*......*.....*.
+optimization finished, #iter = 24643
+....obj = -48241.612543, rho = 9.729719
+nSV = 18848, nBSV = 13499
+........**
+optimization finished, #iter = 23133
+...*
+optimization finished, #iter = 23713
+obj = -47791.229591, rho = 9.659080
+nSV = 18715, nBSV = 13312
+.obj = -47895.636091, rho = 9.504018
+nSV = 18775, nBSV = 13322
+................*.....*
+optimization finished, #iter = 23623
+*.
+optimization finished, #iter = 23085
+obj = -47555.645429, rho = 9.413394
+nSV = 18754, nBSV = 13163
+..obj = -48102.935700, rho = 9.634112
+nSV = 18743, nBSV = 13375
+*.....*...*.......*
+optimization finished, #iter = 23915
+....*...obj = -48312.268215, rho = 10.000823
+nSV = 18677, nBSV = 13307
+.*.*....*.............*.......*..*
+optimization finished, #iter = 24145
+......obj = -47779.393453, rho = 9.695881
+nSV = 18792, nBSV = 13407
+.*..*..
+optimization finished, #iter = 23597
+..*
+optimization finished, #iter = 23913
+.**.
+optimization finished, #iter = 24141
+obj = -48362.754934, rho = 9.609069
+nSV = 18679, nBSV = 13325
+.obj = -48533.285618, rho = 9.544094
+nSV = 18707, nBSV = 13401
+*obj = -47658.449673, rho = 9.686976
+.nSV = 18912, nBSV = 13538
+
+optimization finished, #iter = 24089
+..*..
+optimization finished, #iter = 23696
+obj = -48205.129111, rho = 9.794908
+nSV = 18750, nBSV = 13335
+..*obj = -47999.191317, rho = 9.721214
+nSV = 18783, nBSV = 13471
+...
+optimization finished, #iter = 22506
+...obj = -48342.723938, rho = 9.795303
+nSV = 18600, nBSV = 13357
+.*
+optimization finished, #iter = 23343
+.*..obj = -48347.082911, rho = 9.846300
+nSV = 18778, nBSV = 13361
+...*
+optimization finished, #iter = 23342
+obj = -48335.150643, rho = 9.777046
+nSV = 18703, nBSV = 13294
+..*
+optimization finished, #iter = 23180
+obj = -47894.974454, rho = 9.403846
+nSV = 18746, nBSV = 13285
+.*.....*...*......*.....*
+optimization finished, #iter = 23493
+*obj = -48713.118627, rho = 9.787708
+nSV = 18749, nBSV = 13394
+..*.......*......*
+optimization finished, #iter = 23062
+obj = -48720.208649, rho = 9.914112
+nSV = 18780, nBSV = 13411
+........*
+optimization finished, #iter = 23385
+.obj = -47766.626306, rho = 9.648336
+nSV = 18713, nBSV = 13261
+..*.*.*.*
+optimization finished, #iter = 23551
+...obj = -48185.141367, rho = 9.752605
+nSV = 18759, nBSV = 13298
+*
+optimization finished, #iter = 24010
+obj = -47923.276282, rho = 9.534197
+nSV = 18729, nBSV = 13271
+.*
+optimization finished, #iter = 23611
+*
+optimization finished, #iter = 22982
+obj = -48456.516966, rho = 9.666541
+nSV = 18828, nBSV = 13450
+.*
+optimization finished, #iter = 24738
+obj = -47882.704497, rho = 9.525131
+nSV = 18745, nBSV = 13363
+obj = -48399.286208, rho = 9.707330
+nSV = 18594, nBSV = 13222
+*
+optimization finished, #iter = 23132
+obj = -48254.746895, rho = 9.452112
+nSV = 18655, nBSV = 13289
+*.....*
+optimization finished, #iter = 23281
+obj = -48573.454382, rho = 9.722698
+nSV = 18720, nBSV = 13438
+.*
+optimization finished, #iter = 24098
+obj = -48334.490438, rho = 9.466335
+nSV = 18839, nBSV = 13452
+............................................[LibSVM][LibSVM]................................................................................*....*
+optimization finished, #iter = 23536
+obj = -48227.942319, rho = 9.450467
+nSV = 18706, nBSV = 13325
+..............[LibSVM][LibSVM]*........*
+optimization finished, #iter = 23961
+obj = -48181.770153, rho = 9.629645
+nSV = 18719, nBSV = 13323
+........*........[LibSVM][LibSVM]...*
+optimization finished, #iter = 23444
+obj = -48023.921829, rho = 9.426857
+nSV = 18693, nBSV = 13215
+.........*.........*..*
+optimization finished, #iter = 24185
+obj = -47627.419356, rho = 9.437833
+nSV = 18791, nBSV = 13307
+*......*........*
+optimization finished, #iter = 24515
+obj = -48424.558847, rho = 9.554443
+nSV = 18665, nBSV = 13245
+*.*
+optimization finished, #iter = 23730
+obj = -48429.317755, rho = 9.636112
+nSV = 18620, nBSV = 13251
+*
+optimization finished, #iter = 23852
+obj = -48453.670767, rho = 9.565871
+nSV = 18771, nBSV = 13444
+......*.......*
+optimization finished, #iter = 23267
+obj = -48211.717507, rho = 9.753627
+nSV = 18775, nBSV = 13294
+.......*......*...*..*
+optimization finished, #iter = 23530
+obj = -48214.592837, rho = 9.825003
+nSV = 18625, nBSV = 13361
+*
+optimization finished, #iter = 24180
+obj = -47262.760881, rho = 9.679230
+nSV = 18858, nBSV = 13421
+
+Support Vector Machine - Mean Squared Error (MSE) from Cross Validation:
+ [5.1114392  5.13021003 5.21567702 5.07464629 5.18232111]
+
+Support Vector Machine - R2 Score from Cross Validation:
+ [0.86484847 0.85095901 0.85614329 0.86027863 0.85833701]
+
+Support Vector Machine - Error Values for Predicted Values:
+
+Mean Absolute Error (MAE) :
+ 1.678529484387738
+
+Mean Squared Error (MSE) :
+ 5.471103727304714
+
+Root Mean Square Error (RMSE) :
+ 2.339039060662458
+
+R2 Score :
+ 0.8639107517870875
+Boosting Regression
+
+[LibSVM]..........................*......*
+optimization finished, #iter = 32237
+obj = -59806.147622, rho = 9.823914
+nSV = 36909, nBSV = 35837
+[LibSVM].........................*.....*
+optimization finished, #iter = 30686
+obj = -72529.631093, rho = 10.180888
+nSV = 37162, nBSV = 36207
+[LibSVM].............[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM]...[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM]........*....*
+optimization finished, #iter = 28043
+obj = -92614.761421, rho = 11.897405
+nSV = 37520, nBSV = 36716
+[LibSVM]......................*....*.*
+optimization finished, #iter = 26198
+obj = -119671.097663, rho = 13.272091
+nSV = 37832, nBSV = 37190
+[LibSVM]......................*..*
+optimization finished, #iter = 24741
+obj = -144122.154893, rho = 14.052077
+nSV = 38029, nBSV = 37529
+[LibSVM].....................
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 23264
+obj = -170830.427233, rho = 15.158150
+nSV = 38055, nBSV = 37634
+[LibSVM].....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 22767
+obj = -193278.181160, rho = 15.569288
+nSV = 38177, nBSV = 37801
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21985
+obj = -214980.325975, rho = 16.004655
+nSV = 38247, nBSV = 37938
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21959
+obj = -230634.533590, rho = 15.686454
+nSV = 38171, nBSV = 37889
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21011
+obj = -245193.918592, rho = 18.501688
+nSV = 37898, nBSV = 37658
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 22279
+obj = -262030.593635, rho = 16.867751
+nSV = 38119, nBSV = 37899
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20412
+obj = -274459.500683, rho = 17.358210
+nSV = 37978, nBSV = 37806
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20529
+obj = -291368.037810, rho = 19.051659
+nSV = 38350, nBSV = 38186
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20354
+obj = -296610.300158, rho = 19.945181
+nSV = 38262, nBSV = 38114
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20679
+obj = -303689.496480, rho = 15.771905
+nSV = 38462, nBSV = 38297
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21028
+obj = -311281.746446, rho = 20.212396
+nSV = 38446, nBSV = 38314
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20765
+obj = -313100.752201, rho = 16.998617
+nSV = 38236, nBSV = 38112
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21003
+obj = -310509.066834, rho = 20.589549
+nSV = 37482, nBSV = 37351
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20386
+obj = -325982.375583, rho = 17.829649
+nSV = 38434, nBSV = 38320
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20264
+obj = -332783.452120, rho = 19.830694
+nSV = 38541, nBSV = 38444
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19921
+obj = -339644.110105, rho = 23.421803
+nSV = 38592, nBSV = 38518
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21382
+obj = -330556.346587, rho = 17.941054
+nSV = 38179, nBSV = 38056
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20420
+obj = -331020.756777, rho = 20.780268
+nSV = 37644, nBSV = 37534
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21675
+obj = -333727.828875, rho = 19.995649
+nSV = 38266, nBSV = 38150
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20568
+obj = -339181.363781, rho = 20.385123
+nSV = 37832, nBSV = 37734
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20923
+obj = -345198.967445, rho = 17.544510
+nSV = 38485, nBSV = 38399
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20154
+obj = -346724.250168, rho = 23.850155
+nSV = 38085, nBSV = 38002
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20881
+obj = -349202.429609, rho = 20.261071
+nSV = 38310, nBSV = 38214
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20268
+obj = -353893.774892, rho = 23.532824
+nSV = 38378, nBSV = 38302
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20379
+obj = -356352.383847, rho = 16.791180
+nSV = 38551, nBSV = 38481
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19862
+obj = -362135.913153, rho = 17.932334
+nSV = 38711, nBSV = 38653
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19586
+obj = -362457.104000, rho = 25.013429
+nSV = 38706, nBSV = 38664
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20180
+obj = -356965.451351, rho = 15.369008
+nSV = 38480, nBSV = 38414
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21258
+obj = -355560.260776, rho = 20.454197
+nSV = 38172, nBSV = 38067
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21541
+obj = -351509.054632, rho = 20.666673
+nSV = 38040, nBSV = 37961
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20772
+obj = -355369.081692, rho = 24.058869
+nSV = 38077, nBSV = 37986
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21212
+obj = -350977.453491, rho = 20.679074
+nSV = 38313, nBSV = 38231
+[LibSVM]....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21350
+obj = -350067.951492, rho = 21.501717
+nSV = 37594, nBSV = 37491
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20698
+obj = -362844.043202, rho = 19.723361
+nSV = 38538, nBSV = 38461
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20676
+obj = -365254.996616, rho = 20.815100
+nSV = 38332, nBSV = 38252
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20222
+obj = -369777.111828, rho = 23.912478
+nSV = 38627, nBSV = 38574
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19702
+obj = -371417.702037, rho = 19.010317
+nSV = 38648, nBSV = 38604
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19981
+obj = -366363.383597, rho = 27.359406
+nSV = 38328, nBSV = 38277
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20539
+obj = -363567.498484, rho = 17.462384
+nSV = 38234, nBSV = 38181
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 21208
+obj = -339369.052278, rho = 21.607437
+nSV = 35975, nBSV = 35869
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19933
+obj = -373086.520373, rho = 22.511130
+nSV = 38551, nBSV = 38498
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20592
+obj = -369602.857369, rho = 23.023241
+nSV = 38310, nBSV = 38249
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20865
+obj = -348107.150060, rho = 25.186276
+nSV = 36637, nBSV = 36532
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20536
+obj = -365822.976561, rho = 19.511719
+nSV = 37847, nBSV = 37795
+[LibSVM]...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 20701
+obj = -358314.505316, rho = 19.619004
+nSV = 37140, nBSV = 37080
+
+Boosting Regression Completed in: 2:01:05.449453
+.................................................................................*..*..*........*
+optimization finished, #iter = 25477
+obj = -48440.134178, rho = 9.628958
+nSV = 29422, nBSV = 28462
+*
+optimization finished, #iter = 25395
+obj = -48557.641187, rho = 9.737764
+nSV = 29426, nBSV = 28522
+*
+optimization finished, #iter = 25974
+obj = -48159.409686, rho = 10.029780
+nSV = 29390, nBSV = 28436
+..................*......*
+optimization finished, #iter = 25670
+obj = -48226.860120, rho = 9.669013
+nSV = 29441, nBSV = 28483
+...*.....*
+optimization finished, #iter = 25103
+obj = -47982.308755, rho = 9.734525
+nSV = 29416, nBSV = 28470
+..............................................*......*
+optimization finished, #iter = 24571
+obj = -58793.493503, rho = 10.048217
+nSV = 29803, nBSV = 28959
+.*...*
+optimization finished, #iter = 23870
+obj = -59360.402939, rho = 10.024678
+nSV = 29664, nBSV = 28854
+......................*....*
+optimization finished, #iter = 24185
+obj = -59422.688113, rho = 10.264994
+nSV = 29738, nBSV = 28920
+...........*....*
+optimization finished, #iter = 24079
+obj = -58678.900370, rho = 10.466048
+nSV = 29636, nBSV = 28821
+...............................................*....*
+optimization finished, #iter = 22830
+obj = -76078.910401, rho = 12.123057
+nSV = 29946, nBSV = 29216
+...*...*
+optimization finished, #iter = 22258
+obj = -75372.750650, rho = 11.993623
+nSV = 30013, nBSV = 29295
+..........*....*
+optimization finished, #iter = 24311
+obj = -59003.455976, rho = 10.353531
+nSV = 29689, nBSV = 28829
+..............*...*
+optimization finished, #iter = 22380
+obj = -76229.352334, rho = 11.759288
+nSV = 29982, nBSV = 29303
+.........................................*..*
+optimization finished, #iter = 20419
+obj = -97366.644912, rho = 13.465967
+nSV = 30281, nBSV = 29755
+.....*...*
+optimization finished, #iter = 21360
+obj = -95528.977093, rho = 13.164996
+nSV = 30214, nBSV = 29619
+.......................*....*
+optimization finished, #iter = 22881
+obj = -74440.448863, rho = 11.768720
+nSV = 29971, nBSV = 29273
+........*..*
+optimization finished, #iter = 20603
+obj = -96830.698152, rho = 13.119786
+nSV = 30240, nBSV = 29675
+......................................*...*
+optimization finished, #iter = 21568
+obj = -75330.829964, rho = 11.970200
+nSV = 29965, nBSV = 29339
+......
+Warning: using -h 0 may be faster
+*..*
+optimization finished, #iter = 19424
+obj = -118021.754614, rho = 14.114164
+nSV = 30419, nBSV = 29968
+....*..*
+optimization finished, #iter = 19614
+obj = -117425.697046, rho = 13.765682
+nSV = 30406, nBSV = 29963
+.................*..*
+optimization finished, #iter = 19914
+obj = -116278.240656, rho = 13.813236
+nSV = 30435, nBSV = 29962
+.........................................
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 19050
+obj = -138477.873364, rho = 15.378353
+nSV = 30483, nBSV = 30092
+....*.*
+optimization finished, #iter = 18614
+obj = -139057.975446, rho = 13.660610
+nSV = 30560, nBSV = 30190
+.............*..*
+optimization finished, #iter = 20422
+obj = -95106.582457, rho = 12.731228
+nSV = 30190, nBSV = 29632
+....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18777
+obj = -135412.723004, rho = 15.255912
+nSV = 30366, nBSV = 30012
+......................*..*
+optimization finished, #iter = 20487
+obj = -95266.318051, rho = 13.362069
+nSV = 30233, nBSV = 29693
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17993
+obj = -155547.673891, rho = 14.338286
+nSV = 30543, nBSV = 30231
+...
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18024
+obj = -159029.792877, rho = 14.934463
+nSV = 30603, nBSV = 30289
+.......................
+Warning: using -h 0 may be faster
+*.*
+optimization finished, #iter = 17653
+obj = -152384.947859, rho = 14.075721
+nSV = 30605, nBSV = 30298
+.........................................*..*
+optimization finished, #iter = 19238
+obj = -115951.595072, rho = 14.757675
+nSV = 30335, nBSV = 29893
+......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17690
+obj = -174195.882379, rho = 15.372379
+nSV = 30508, nBSV = 30247
+..............*..*
+optimization finished, #iter = 19285
+obj = -115713.787821, rho = 13.939836
+nSV = 30385, nBSV = 29949
+.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17471
+obj = -172236.312570, rho = 17.085804
+nSV = 30229, nBSV = 29973
+.............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17432
+obj = -167184.552356, rho = 16.184362
+nSV = 30271, nBSV = 30017
+..........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17172
+obj = -184599.929783, rho = 14.989528
+nSV = 30525, nBSV = 30295
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18857
+obj = -135499.228195, rho = 14.700434
+nSV = 30544, nBSV = 30175
+...............................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17513
+obj = -182888.979190, rho = 16.075752
+nSV = 30651, nBSV = 30390
+....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18879
+obj = -134825.703347, rho = 15.285223
+nSV = 30495, nBSV = 30132
+....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17731
+obj = -197594.659209, rho = 18.044155
+nSV = 30076, nBSV = 29849
+.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17032
+obj = -190301.290580, rho = 16.129982
+nSV = 30587, nBSV = 30369
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17908
+obj = -154801.275040, rho = 15.447661
+nSV = 30601, nBSV = 30302
+...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17062
+obj = -194107.913702, rho = 17.378522
+nSV = 30314, nBSV = 30105
+...........................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16508
+obj = -213467.848074, rho = 16.127938
+nSV = 30507, nBSV = 30356
+.......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17361
+obj = -169485.830070, rho = 15.383611
+nSV = 30560, nBSV = 30313
+...................................
+Warning: using -h 0 may be faster
+*...*
+optimization finished, #iter = 18716
+obj = -150038.760009, rho = 16.271586
+nSV = 30564, nBSV = 30202
+......
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16904
+obj = -206195.959306, rho = 14.989004
+nSV = 30683, nBSV = 30514
+....................
+Warning: using -h 0 may be faster
+.*
+optimization finished, #iter = 16835
+obj = -204609.706330, rho = 16.598657
+nSV = 30618, nBSV = 30430
+........
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16495
+obj = -221369.981379, rho = 17.900632
+nSV = 30319, nBSV = 30168
+....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17201
+obj = -183421.470806, rho = 16.962220
+nSV = 30748, nBSV = 30522
+......................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16801
+obj = -214509.294617, rho = 17.952324
+nSV = 30426, nBSV = 30272
+.............................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16428
+obj = -232002.900185, rho = 17.395350
+nSV = 30673, nBSV = 30545
+.......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17103
+obj = -196743.237883, rho = 15.889031
+nSV = 30667, nBSV = 30456
+....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17720
+obj = -167719.645590, rho = 15.859853
+nSV = 30663, nBSV = 30397
+........................
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17304
+obj = -226974.953462, rho = 15.979058
+nSV = 30757, nBSV = 30624
+....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17314
+obj = -211685.020580, rho = 16.491490
+nSV = 30558, nBSV = 30387
+.................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17253
+obj = -234225.000722, rho = 17.320032
+nSV = 30248, nBSV = 30086
+....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16797
+obj = -206793.569218, rho = 15.820684
+nSV = 30613, nBSV = 30446
+..............................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16290
+obj = -233346.978135, rho = 20.548074
+nSV = 30590, nBSV = 30475
+........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16378
+obj = -242182.655491, rho = 17.359478
+nSV = 30568, nBSV = 30428
+.......
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16700
+obj = -214528.591474, rho = 18.965004
+nSV = 30636, nBSV = 30474
+.........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17327
+obj = -178889.679878, rho = 15.782201
+nSV = 30604, nBSV = 30373
+...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17908
+obj = -220020.668962, rho = 18.539124
+nSV = 30529, nBSV = 30374
+..................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16881
+obj = -236037.961443, rho = 15.815875
+nSV = 30625, nBSV = 30482
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17272
+obj = -245579.107752, rho = 17.954347
+nSV = 30269, nBSV = 30150
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16854
+obj = -222342.801580, rho = 16.679207
+nSV = 30656, nBSV = 30502
+..........................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16036
+obj = -242730.283041, rho = 20.871808
+nSV = 30398, nBSV = 30287
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17033
+obj = -251758.453443, rho = 18.918820
+nSV = 30647, nBSV = 30503
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17033
+obj = -230220.624686, rho = 16.720397
+nSV = 30756, nBSV = 30601
+...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16900
+obj = -190137.706510, rho = 17.708597
+nSV = 30691, nBSV = 30500
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17049
+obj = -231498.547561, rho = 15.985495
+nSV = 30689, nBSV = 30540
+...............................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16345
+obj = -248599.511639, rho = 14.525756
+nSV = 30805, nBSV = 30688
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16580
+obj = -254153.216036, rho = 19.177545
+nSV = 30209, nBSV = 30116
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16764
+obj = -237110.596998, rho = 16.768337
+nSV = 30665, nBSV = 30528
+.......................................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16601
+obj = -251714.871665, rho = 19.584139
+nSV = 30651, nBSV = 30537
+......
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16540
+obj = -200637.092278, rho = 18.614652
+nSV = 30577, nBSV = 30428
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16380
+obj = -261152.340650, rho = 17.514459
+nSV = 30604, nBSV = 30515
+..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16042
+obj = -242590.237908, rho = 20.381076
+nSV = 30868, nBSV = 30771
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17079
+obj = -236843.808597, rho = 19.036116
+nSV = 30496, nBSV = 30358
+......................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16079
+obj = -255633.114013, rho = 16.759687
+nSV = 30775, nBSV = 30693
+.......
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16217
+obj = -266964.170947, rho = 18.062216
+nSV = 30819, nBSV = 30735
+...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16248
+obj = -247138.666731, rho = 18.038482
+nSV = 30852, nBSV = 30739
+........................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18940
+obj = -205702.874712, rho = 17.521983
+nSV = 30606, nBSV = 30425
+..........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16993
+obj = -254033.452011, rho = 21.077400
+nSV = 30418, nBSV = 30296
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15946
+obj = -273451.118862, rho = 20.331746
+nSV = 30930, nBSV = 30877
+..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16321
+obj = -251143.946669, rho = 18.030196
+nSV = 30915, nBSV = 30827
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16837
+obj = -246246.273709, rho = 17.774840
+nSV = 30710, nBSV = 30591
+............................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16015
+obj = -255484.087175, rho = 15.362792
+nSV = 30183, nBSV = 30099
+.....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15958
+obj = -275001.789562, rho = 19.523844
+nSV = 30850, nBSV = 30789
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16187
+obj = -253971.251295, rho = 18.637782
+nSV = 30929, nBSV = 30832
+......................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16723
+obj = -211921.239501, rho = 18.017718
+nSV = 30188, nBSV = 30013
+..............................................
+Warning: using -h 0 may be faster
+.*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16259
+obj = -250316.626386, rho = 20.720241
+nSV = 30401, nBSV = 30297
+.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16935
+obj = -264501.566578, rho = 18.495549
+nSV = 30816, nBSV = 30738
+..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15930
+obj = -274602.688814, rho = 18.654912
+nSV = 30828, nBSV = 30749
+
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16105
+obj = -256147.512853, rho = 16.786700
+nSV = 30944, nBSV = 30866
+.....................................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16419
+
+Warning: using -h 0 may be faster
+obj = -254652.157858, rho = 21.656641
+nSV = 30758, nBSV = 30667
+*
+optimization finished, #iter = 15739
+obj = -279702.838321, rho = 20.022239
+nSV = 30940, nBSV = 30885
+.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16721
+obj = -265610.366934, rho = 16.669531
+nSV = 30512, nBSV = 30420
+..............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17181
+obj = -223339.787172, rho = 18.687182
+nSV = 30773, nBSV = 30632
+...................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16320
+obj = -258464.512091, rho = 16.298904
+nSV = 30796, nBSV = 30685
+................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17096
+obj = -251190.209626, rho = 15.587084
+nSV = 30628, nBSV = 30523
+..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16082
+obj = -279341.111154, rho = 19.824273
+nSV = 30932, nBSV = 30856
+.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16923
+obj = -269103.195044, rho = 23.848986
+nSV = 30679, nBSV = 30587
+........................................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16490
+obj = -255794.018000, rho = 19.067120
+nSV = 30446, nBSV = 30341
+.......
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15888
+obj = -275982.018685, rho = 18.091176
+nSV = 30919, nBSV = 30866
+.....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16448
+obj = -229744.098509, rho = 21.128959
+nSV = 30729, nBSV = 30604
+................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+**.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16317
+obj = -256216.218877, rho = 21.689010
+nSV = 30442, nBSV = 30338
+...................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16789
+obj = -257582.611592, rho = 18.689688
+nSV = 30712, nBSV = 30605
+.....
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15807
+obj = -277514.281562, rho = 21.179489
+nSV = 30955, nBSV = 30897
+..........................................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16206
+obj = -266352.784222, rho = 21.830863
+nSV = 30891, nBSV = 30831
+...
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17154
+obj = -233239.310722, rho = 17.410710
+nSV = 30784, nBSV = 30657
+........
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15845
+obj = -276083.352290, rho = 20.068098
+nSV = 30902, nBSV = 30847
+.........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17404
+obj = -256449.631756, rho = 16.613210
+nSV = 30334, nBSV = 30203
+..........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16356
+obj = -263984.982335, rho = 18.508301
+nSV = 30683, nBSV = 30604
+..................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16116
+obj = -278183.856746, rho = 17.745153
+nSV = 30934, nBSV = 30871
+.........
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16369
+obj = -237295.736758, rho = 22.684747
+nSV = 30664, nBSV = 30561
+.........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16162
+obj = -261288.813037, rho = 19.875767
+nSV = 30214, nBSV = 30124
+........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16072
+obj = -267428.271472, rho = 18.920288
+nSV = 30821, nBSV = 30749
+......................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15776
+obj = -279248.315972, rho = 18.643514
+nSV = 30964, nBSV = 30914
+......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16809
+obj = -241847.703113, rho = 19.527448
+nSV = 30844, nBSV = 30740
+........
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15865
+obj = -274818.631215, rho = 20.370299
+nSV = 30887, nBSV = 30827
+................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17217
+obj = -263189.166151, rho = 18.918297
+nSV = 30625, nBSV = 30514
+.........[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM].............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16398
+obj = -243088.392977, rho = 22.531071
+nSV = 30567, nBSV = 30466
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16216
+obj = -273161.352490, rho = 17.013811
+nSV = 30868, nBSV = 30786
+................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16146
+obj = -267873.234363, rho = 19.904789
+nSV = 30557, nBSV = 30487
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18027
+obj = -240093.581881, rho = 17.079209
+nSV = 30657, nBSV = 30532
+..........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16077
+obj = -277564.826588, rho = 20.459027
+nSV = 30908, nBSV = 30833
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17426
+obj = -265993.476793, rho = 21.653759
+nSV = 30563, nBSV = 30474
+.....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16381
+obj = -249143.224202, rho = 22.646496
+nSV = 30618, nBSV = 30522
+..........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16933
+obj = -274374.559347, rho = 17.750674
+nSV = 30784, nBSV = 30687
+................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16466
+obj = -272416.010333, rho = 16.209162
+nSV = 30644, nBSV = 30554
+....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16773
+obj = -249057.147508, rho = 17.473442
+nSV = 30807, nBSV = 30701
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16170
+obj = -277562.224196, rho = 21.342674
+nSV = 30719, nBSV = 30653
+..............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16948
+obj = -269466.979572, rho = 18.847197
+nSV = 30636, nBSV = 30548
+.....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16173
+obj = -252997.839947, rho = 23.853413
+nSV = 30586, nBSV = 30500
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17335
+obj = -267438.296002, rho = 18.171774
+nSV = 30480, nBSV = 30390
+...............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16248
+obj = -278597.499145, rho = 19.062851
+nSV = 30727, nBSV = 30637
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17005
+obj = -250001.258704, rho = 17.687455
+nSV = 30786, nBSV = 30677
+...........
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15986
+obj = -280681.043382, rho = 20.534451
+nSV = 30586, nBSV = 30530
+..............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16237
+obj = -274742.425548, rho = 21.147988
+nSV = 30839, nBSV = 30765
+...[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM].................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16066
+obj = -260994.572867, rho = 23.212674
+nSV = 30866, nBSV = 30785
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16444
+obj = -282651.775849, rho = 19.733508
+nSV = 30693, nBSV = 30632
+..............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16249
+obj = -280890.158255, rho = 23.727942
+nSV = 30867, nBSV = 30792
+....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16397
+obj = -259679.739632, rho = 20.416166
+nSV = 30883, nBSV = 30804
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16246
+obj = -281597.313332, rho = 23.717930
+nSV = 30474, nBSV = 30399
+..............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16146
+obj = -280661.406282, rho = 18.950478
+nSV = 30889, nBSV = 30827
+....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15989
+obj = -262624.530501, rho = 23.175035
+nSV = 30854, nBSV = 30791
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16133
+obj = -288504.030991, rho = 17.411261
+nSV = 30940, nBSV = 30879
+.............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15908
+obj = -284849.505236, rho = 17.859148
+nSV = 30984, nBSV = 30936
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16957
+obj = -257711.081483, rho = 19.382136
+nSV = 30704, nBSV = 30631
+...........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15897
+obj = -277602.659862, rho = 24.476944
+nSV = 29850, nBSV = 29796
+.............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15732
+obj = -284593.808604, rho = 20.836421
+nSV = 30947, nBSV = 30901
+.....................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15923
+obj = -262594.847936, rho = 19.077004
+nSV = 30582, nBSV = 30516
+..........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16091
+obj = -277766.792344, rho = 16.918788
+nSV = 29989, nBSV = 29926
+..............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15685
+obj = -283425.448598, rho = 18.705456
+nSV = 30890, nBSV = 30852
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17449
+.obj = -256148.760572, rho = 21.227679
+nSV = 30478, nBSV = 30370
+.........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15882
+obj = -274593.938907, rho = 25.748392
+nSV = 29338, nBSV = 29270
+...............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15728
+obj = -283346.589342, rho = 19.477975
+nSV = 30842, nBSV = 30806
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16092
+obj = -267178.180789, rho = 26.699391
+nSV = 30711, nBSV = 30633
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16152
+obj = -290039.607448, rho = 15.154756
+nSV = 30570, nBSV = 30507
+...............
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17147
+obj = -273290.023288, rho = 22.258368
+nSV = 30169, nBSV = 30092
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16904
+obj = -264510.380218, rho = 23.581735
+nSV = 30742, nBSV = 30629
+........
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16086
+obj = -288941.917069, rho = 21.146433
+nSV = 30549, nBSV = 30488
+..............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16104
+obj = -283514.116988, rho = 20.554192
+nSV = 30770, nBSV = 30702
+......................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16356
+obj = -263076.248897, rho = 21.515379
+nSV = 30285, nBSV = 30211
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16335
+obj = -281850.346436, rho = 18.074001
+nSV = 29817, nBSV = 29742
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17315
+obj = -272389.969252, rho = 17.826334
+nSV = 30460, nBSV = 30380
+.....................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16732
+obj = -264911.564690, rho = 21.229530
+nSV = 30737, nBSV = 30661
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16321
+obj = -283315.632436, rho = 19.133315
+nSV = 30084, nBSV = 30024
+................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16049
+obj = -283187.289290, rho = 20.976899
+nSV = 30538, nBSV = 30471
+.......................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16614
+obj = -267660.252320, rho = 20.965693
+nSV = 30522, nBSV = 30437
+.......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16183
+obj = -295287.718086, rho = 19.288849
+nSV = 30828, nBSV = 30761
+...............
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18482
+obj = -261389.514496, rho = 15.562757
+nSV = 29675, nBSV = 29564
+......................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16806
+obj = -268292.479671, rho = 17.403125
+nSV = 30793, nBSV = 30710
+.......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16329
+obj = -287595.187724, rho = 22.700305
+nSV = 29880, nBSV = 29813
+...............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15887
+obj = -285040.574143, rho = 26.696963
+nSV = 30471, nBSV = 30435
+........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16625
+obj = -268129.222010, rho = 22.712871
+nSV = 30489, nBSV = 30404
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17527
+obj = -283303.730694, rho = 15.989240
+nSV = 30155, nBSV = 30078
+...............
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 18333
+obj = -272774.738912, rho = 15.851505
+nSV = 30016, nBSV = 29910
+.......................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17188
+obj = -265652.910345, rho = 24.378766
+nSV = 30549, nBSV = 30460
+........
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15843
+obj = -295110.086136, rho = 26.434319
+nSV = 30393, nBSV = 30354
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16516
+obj = -284160.074401, rho = 22.080296
+nSV = 30583, nBSV = 30501
+........................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16154
+obj = -271715.962507, rho = 18.102472
+nSV = 30595, nBSV = 30531
+.......
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17202
+obj = -293104.752351, rho = 17.274688
+nSV = 30733, nBSV = 30669
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16471
+obj = -286041.738374, rho = 20.718052
+nSV = 30716, nBSV = 30644
+......................
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16389
+obj = -273448.634642, rho = 24.103072
+nSV = 30735, nBSV = 30659
+........
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16219
+obj = -294560.031989, rho = 22.099705
+nSV = 30580, nBSV = 30513
+...............
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16186
+obj = -285650.939738, rho = 21.392769
+nSV = 30528, nBSV = 30466
+........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16503
+obj = -268328.416956, rho = 21.778094
+nSV = 30299, nBSV = 30206
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16731
+obj = -289704.554222, rho = 18.861146
+nSV = 30458, nBSV = 30400
+.........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16633
+obj = -264276.611722, rho = 20.211241
+nSV = 30012, nBSV = 29934
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16044
+obj = -297086.657428, rho = 18.899405
+nSV = 30682, nBSV = 30638
+..........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16496
+obj = -273602.871480, rho = 23.273912
+nSV = 30650, nBSV = 30555
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16110
+obj = -300947.215262, rho = 21.447808
+nSV = 30834, nBSV = 30792
+.........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16278
+obj = -272639.716268, rho = 22.320291
+nSV = 30648, nBSV = 30598
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 15856
+obj = -300234.725391, rho = 20.879744
+nSV = 30661, nBSV = 30629
+..........................
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16391
+obj = -274999.117613, rho = 21.791821
+nSV = 30606, nBSV = 30542
+.....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16192
+obj = -296457.508873, rho = 20.323960
+nSV = 30714, nBSV = 30669
+.........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17046
+obj = -273178.189306, rho = 22.909472
+nSV = 30632, nBSV = 30553
+....
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16172
+obj = -293405.817229, rho = 26.052450
+nSV = 29969, nBSV = 29902
+...........................
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16408
+obj = -265548.321736, rho = 22.816817
+nSV = 29815, nBSV = 29727
+....
+Warning: using -h 0 may be faster
+*..
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 17909
+obj = -276706.888163, rho = 15.889654
+nSV = 29432, nBSV = 29347
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16303
+obj = -279660.988830, rho = 21.567482
+nSV = 30888, nBSV = 30813
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16068
+obj = -279197.071711, rho = 24.296281
+nSV = 30780, nBSV = 30716
+...............
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*.
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 16397
+obj = -276946.812141, rho = 21.168164
+nSV = 30789, nBSV = 30721
+[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM]
+Support Vector Machine - Mean Squared Error (MSE) from Cross Validation:
+ [5.15004508 5.53150892 5.43760894 5.6269076  5.35181158]
+
+Support Vector Machine - R2 Score from Cross Validation:
+ [0.86382769 0.83930063 0.85002205 0.8450731  0.85370385]
+[LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM][LibSVM]
+Support Vector Machine - Error Values for Predicted Values:
+
+Mean Absolute Error (MAE) :
+ 1.7885010064546343
+
+Mean Squared Error (MSE) :
+ 5.728641134946084
+
+Root Mean Square Error (RMSE) :
+ 2.3934579868771637
+
+R2 Score :
+ 0.857504718573405
+
+Fitting 5 folds for each of 27 candidates, totalling 135 fits
+[CV 4/5; 1/27] START C=0.1, epsilon=0.1, gamma=0.1..............................
+[CV 4/5; 1/27] END C=0.1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-6.712) r2: (test=0.815) total time= 2.2min
+[CV 1/5; 3/27] START C=0.1, epsilon=0.1, gamma=scale............................
+[CV 1/5; 3/27] END C=0.1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-6.759) r2: (test=0.821) total time= 2.1min
+[CV 2/5; 4/27] START C=0.1, epsilon=0.01, gamma=0.1.............................
+[CV 2/5; 4/27] END C=0.1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-6.657) r2: (test=0.807) total time= 2.2min
+[CV 5/5; 5/27] START C=0.1, epsilon=0.01, gamma=0.01............................
+[CV 5/5; 5/27] END C=0.1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-7.746) r2: (test=0.788) total time= 2.3min
+[CV 3/5; 7/27] START C=0.1, epsilon=0.001, gamma=0.1............................
+[CV 3/5; 7/27] END C=0.1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-6.952) r2: (test=0.808) total time= 2.3min
+[CV 1/5; 9/27] START C=0.1, epsilon=0.001, gamma=scale..........................
+[CV 1/5; 9/27] END C=0.1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-6.767) r2: (test=0.821) total time= 2.3min
+[CV 4/5; 10/27] START C=1, epsilon=0.1, gamma=0.1...............................
+[CV 4/5; 10/27] END C=1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-5.058) r2: (test=0.861) total time= 2.3min
+[CV 3/5; 12/27] START C=1, epsilon=0.1, gamma=scale.............................
+[CV 3/5; 12/27] END C=1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-5.220) r2: (test=0.856) total time= 2.3min
+[CV 3/5; 14/27] START C=1, epsilon=0.01, gamma=0.01.............................
+[CV 3/5; 14/27] END C=1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-6.391) r2: (test=0.824) total time= 2.3min
+[CV 5/5; 15/27] START C=1, epsilon=0.01, gamma=scale............................
+[CV 5/5; 15/27] END C=1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-5.175) r2: (test=0.859) total time= 2.4min
+[CV 3/5; 17/27] START C=1, epsilon=0.001, gamma=0.01............................
+[CV 3/5; 17/27] END C=1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-6.391) r2: (test=0.824) total time= 2.2min
+[CV 1/5; 19/27] START C=100, epsilon=0.1, gamma=0.1.............................
+[CV 1/5; 19/27] END C=100, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-4.898) r2: (test=0.870) total time=76.9min
+[CV 5/5; 22/27] START C=100, epsilon=0.01, gamma=0.1............................
+[CV 5/5; 22/27] END C=100, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-5.157) r2: (test=0.859) total time=75.5min
+[CV 3/5; 25/27] START C=100, epsilon=0.001, gamma=0.1...........................
+[CV 3/5; 25/27] END C=100, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-4.911) r2: (test=0.865) total time=75.7min
+[CV 3/5; 2/27] START C=0.1, epsilon=0.1, gamma=0.01.............................
+[CV 3/5; 2/27] END C=0.1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-7.907) r2: (test=0.782) total time= 2.2min
+[CV 2/5; 3/27] START C=0.1, epsilon=0.1, gamma=scale............................
+[CV 2/5; 3/27] END C=0.1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-6.584) r2: (test=0.809) total time= 2.1min
+[CV 4/5; 4/27] START C=0.1, epsilon=0.01, gamma=0.1.............................
+[CV 4/5; 4/27] END C=0.1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-6.711) r2: (test=0.815) total time= 2.3min
+[CV 2/5; 6/27] START C=0.1, epsilon=0.01, gamma=scale...........................
+[CV 2/5; 6/27] END C=0.1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-6.584) r2: (test=0.809) total time= 2.3min
+[CV 5/5; 7/27] START C=0.1, epsilon=0.001, gamma=0.1............................
+[CV 5/5; 7/27] END C=0.1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-6.780) r2: (test=0.815) total time= 2.4min
+[CV 1/5; 10/27] START C=1, epsilon=0.1, gamma=0.1...............................
+[CV 1/5; 10/27] END C=1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-5.083) r2: (test=0.866) total time= 2.3min
+[CV 4/5; 11/27] START C=1, epsilon=0.1, gamma=0.01..............................
+[CV 4/5; 11/27] END C=1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-6.097) r2: (test=0.832) total time= 2.2min
+[CV 1/5; 13/27] START C=1, epsilon=0.01, gamma=0.1..............................
+[CV 1/5; 13/27] END C=1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-5.080) r2: (test=0.866) total time= 2.3min
+[CV 4/5; 14/27] START C=1, epsilon=0.01, gamma=0.01.............................
+[CV 4/5; 14/27] END C=1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-6.092) r2: (test=0.832) total time= 2.3min
+[CV 2/5; 16/27] START C=1, epsilon=0.001, gamma=0.1.............................
+[CV 2/5; 16/27] END C=1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-5.113) r2: (test=0.851) total time= 2.4min
+[CV 5/5; 17/27] START C=1, epsilon=0.001, gamma=0.01............................
+[CV 5/5; 17/27] END C=1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-6.211) r2: (test=0.830) total time= 2.3min
+[CV 3/5; 19/27] START C=100, epsilon=0.1, gamma=0.1.............................
+[CV 3/5; 19/27] END C=100, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-4.901) r2: (test=0.865) total time=74.3min
+[CV 2/5; 22/27] START C=100, epsilon=0.01, gamma=0.1............................
+[CV 2/5; 22/27] END C=100, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-4.980) r2: (test=0.855) total time=77.3min
+[CV 2/5; 25/27] START C=100, epsilon=0.001, gamma=0.1...........................
+[CV 2/5; 25/27] END C=100, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-4.982) r2: (test=0.855) total time=80.7min
+[CV 1/5; 1/27] START C=0.1, epsilon=0.1, gamma=0.1..............................
+[CV 1/5; 1/27] END C=0.1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-6.853) r2: (test=0.819) total time= 2.2min
+[CV 4/5; 3/27] START C=0.1, epsilon=0.1, gamma=scale............................
+[CV 4/5; 3/27] END C=0.1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-6.619) r2: (test=0.818) total time= 2.2min
+[CV 4/5; 5/27] START C=0.1, epsilon=0.01, gamma=0.01............................
+[CV 4/5; 5/27] END C=0.1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-7.587) r2: (test=0.791) total time= 2.3min
+[CV 2/5; 7/27] START C=0.1, epsilon=0.001, gamma=0.1............................
+[CV 2/5; 7/27] END C=0.1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-6.656) r2: (test=0.807) total time= 2.3min
+[CV 5/5; 8/27] START C=0.1, epsilon=0.001, gamma=0.01...........................
+[CV 5/5; 8/27] END C=0.1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-7.747) r2: (test=0.788) total time= 2.3min
+[CV 2/5; 10/27] START C=1, epsilon=0.1, gamma=0.1...............................
+[CV 2/5; 10/27] END C=1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-5.110) r2: (test=0.852) total time= 2.3min
+[CV 1/5; 12/27] START C=1, epsilon=0.1, gamma=scale.............................
+[CV 1/5; 12/27] END C=1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-5.104) r2: (test=0.865) total time= 2.3min
+[CV 4/5; 13/27] START C=1, epsilon=0.01, gamma=0.1..............................
+[CV 4/5; 13/27] END C=1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-5.056) r2: (test=0.861) total time= 2.4min
+[CV 2/5; 15/27] START C=1, epsilon=0.01, gamma=scale............................
+[CV 2/5; 15/27] END C=1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-5.138) r2: (test=0.851) total time= 2.3min
+[CV 5/5; 16/27] START C=1, epsilon=0.001, gamma=0.1.............................
+[CV 5/5; 16/27] END C=1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-5.175) r2: (test=0.859) total time= 2.4min
+[CV 3/5; 18/27] START C=1, epsilon=0.001, gamma=scale...........................
+[CV 3/5; 18/27] END C=1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-5.225) r2: (test=0.856) total time= 2.3min
+[CV 1/5; 20/27] START C=100, epsilon=0.1, gamma=0.01............................
+[CV 1/5; 20/27] END C=100, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-4.950) r2: (test=0.869) total time= 4.1min
+[CV 4/5; 20/27] START C=100, epsilon=0.1, gamma=0.01............................
+[CV 4/5; 20/27] END C=100, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-4.889) r2: (test=0.865) total time= 3.8min
+[CV 2/5; 21/27] START C=100, epsilon=0.1, gamma=scale...........................
+[CV 2/5; 21/27] END C=100, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-4.819) r2: (test=0.860) total time=56.2min
+[CV 4/5; 21/27] START C=100, epsilon=0.1, gamma=scale...........................
+[CV 4/5; 21/27] END C=100, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-4.762) r2: (test=0.869) total time=55.6min
+[CV 2/5; 24/27] START C=100, epsilon=0.01, gamma=scale..........................
+[CV 2/5; 24/27] END C=100, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-4.831) r2: (test=0.860) total time=56.1min
+[CV 5/5; 25/27] START C=100, epsilon=0.001, gamma=0.1...........................
+[CV 5/5; 25/27] END C=100, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-5.159) r2: (test=0.859) total time=68.0min
+[CV 2/5; 1/27] START C=0.1, epsilon=0.1, gamma=0.1..............................
+[CV 2/5; 1/27] END C=0.1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-6.665) r2: (test=0.806) total time= 2.2min
+[CV 3/5; 3/27] START C=0.1, epsilon=0.1, gamma=scale............................
+[CV 3/5; 3/27] END C=0.1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-6.867) r2: (test=0.811) total time= 2.1min
+[CV 3/5; 4/27] START C=0.1, epsilon=0.01, gamma=0.1.............................
+[CV 3/5; 4/27] END C=0.1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-6.951) r2: (test=0.808) total time= 2.2min
+[CV 1/5; 6/27] START C=0.1, epsilon=0.01, gamma=scale...........................
+[CV 1/5; 6/27] END C=0.1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-6.765) r2: (test=0.821) total time= 2.3min
+[CV 4/5; 7/27] START C=0.1, epsilon=0.001, gamma=0.1............................
+[CV 4/5; 7/27] END C=0.1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-6.711) r2: (test=0.815) total time= 2.3min
+[CV 2/5; 9/27] START C=0.1, epsilon=0.001, gamma=scale..........................
+[CV 2/5; 9/27] END C=0.1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-6.585) r2: (test=0.809) total time= 2.3min
+[CV 1/5; 11/27] START C=1, epsilon=0.1, gamma=0.01..............................
+[CV 1/5; 11/27] END C=1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-6.263) r2: (test=0.834) total time= 2.2min
+[CV 2/5; 12/27] START C=1, epsilon=0.1, gamma=scale.............................
+[CV 2/5; 12/27] END C=1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-5.138) r2: (test=0.851) total time= 2.2min
+[CV 5/5; 13/27] START C=1, epsilon=0.01, gamma=0.1..............................
+[CV 5/5; 13/27] END C=1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-5.173) r2: (test=0.859) total time= 2.3min
+[CV 3/5; 15/27] START C=1, epsilon=0.01, gamma=scale............................
+[CV 3/5; 15/27] END C=1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-5.225) r2: (test=0.856) total time= 2.2min
+[CV 1/5; 17/27] START C=1, epsilon=0.001, gamma=0.01............................
+[CV 1/5; 17/27] END C=1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-6.269) r2: (test=0.834) total time= 2.3min
+[CV 4/5; 18/27] START C=1, epsilon=0.001, gamma=scale...........................
+[CV 4/5; 18/27] END C=1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-5.069) r2: (test=0.860) total time= 2.3min
+[CV 2/5; 20/27] START C=100, epsilon=0.1, gamma=0.01............................
+[CV 2/5; 20/27] END C=100, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-4.979) r2: (test=0.855) total time= 3.9min
+[CV 5/5; 20/27] START C=100, epsilon=0.1, gamma=0.01............................
+[CV 5/5; 20/27] END C=100, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-4.979) r2: (test=0.864) total time= 3.8min
+[CV 3/5; 21/27] START C=100, epsilon=0.1, gamma=scale...........................
+[CV 3/5; 21/27] END C=100, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-4.783) r2: (test=0.868) total time=59.0min
+[CV 1/5; 22/27] START C=100, epsilon=0.01, gamma=0.1............................
+[CV 1/5; 22/27] END C=100, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-4.917) r2: (test=0.870) total time=73.7min
+[CV 4/5; 24/27] START C=100, epsilon=0.01, gamma=scale..........................
+[CV 4/5; 24/27] END C=100, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-4.779) r2: (test=0.868) total time=57.2min
+[CV 2/5; 27/27] START C=100, epsilon=0.001, gamma=scale.........................
+[CV 2/5; 27/27] END C=100, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-4.833) r2: (test=0.860) total time=50.5min
+[CV 1/5; 2/27] START C=0.1, epsilon=0.1, gamma=0.01.............................
+[CV 1/5; 2/27] END C=0.1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-7.902) r2: (test=0.791) total time= 2.2min
+[CV 5/5; 3/27] START C=0.1, epsilon=0.1, gamma=scale............................
+[CV 5/5; 3/27] END C=0.1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-6.676) r2: (test=0.817) total time= 2.1min
+[CV 1/5; 5/27] START C=0.1, epsilon=0.01, gamma=0.01............................
+[CV 1/5; 5/27] END C=0.1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-7.909) r2: (test=0.791) total time= 2.2min
+[CV 3/5; 6/27] START C=0.1, epsilon=0.01, gamma=scale...........................
+[CV 3/5; 6/27] END C=0.1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-6.869) r2: (test=0.811) total time= 2.3min
+[CV 1/5; 8/27] START C=0.1, epsilon=0.001, gamma=0.01...........................
+[CV 1/5; 8/27] END C=0.1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-7.909) r2: (test=0.791) total time= 2.3min
+[CV 3/5; 9/27] START C=0.1, epsilon=0.001, gamma=scale..........................
+[CV 3/5; 9/27] END C=0.1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-6.870) r2: (test=0.811) total time= 2.2min
+[CV 5/5; 10/27] START C=1, epsilon=0.1, gamma=0.1...............................
+[CV 5/5; 10/27] END C=1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-5.171) r2: (test=0.859) total time= 2.3min
+[CV 4/5; 12/27] START C=1, epsilon=0.1, gamma=scale.............................
+[CV 4/5; 12/27] END C=1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-5.064) r2: (test=0.861) total time= 2.2min
+[CV 1/5; 14/27] START C=1, epsilon=0.01, gamma=0.01.............................
+[CV 1/5; 14/27] END C=1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-6.268) r2: (test=0.834) total time= 2.3min
+[CV 4/5; 15/27] START C=1, epsilon=0.01, gamma=scale............................
+[CV 4/5; 15/27] END C=1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-5.068) r2: (test=0.860) total time= 2.3min
+[CV 2/5; 17/27] START C=1, epsilon=0.001, gamma=0.01............................
+[CV 2/5; 17/27] END C=1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-6.209) r2: (test=0.820) total time= 2.4min
+[CV 5/5; 18/27] START C=1, epsilon=0.001, gamma=scale...........................
+[CV 5/5; 18/27] END C=1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-5.176) r2: (test=0.859) total time= 2.4min
+[CV 3/5; 20/27] START C=100, epsilon=0.1, gamma=0.01............................
+[CV 3/5; 20/27] END C=100, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-5.050) r2: (test=0.861) total time= 3.8min
+[CV 1/5; 21/27] START C=100, epsilon=0.1, gamma=scale...........................
+[CV 1/5; 21/27] END C=100, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-4.787) r2: (test=0.873) total time=58.9min
+[CV 5/5; 21/27] START C=100, epsilon=0.1, gamma=scale...........................
+[CV 5/5; 21/27] END C=100, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-4.997) r2: (test=0.863) total time=56.7min
+[CV 3/5; 24/27] START C=100, epsilon=0.01, gamma=scale..........................
+[CV 3/5; 24/27] END C=100, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-4.796) r2: (test=0.868) total time=58.1min
+[CV 1/5; 26/27] START C=100, epsilon=0.001, gamma=0.01..........................
+[CV 1/5; 26/27] END C=100, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-4.949) r2: (test=0.869) total time= 4.0min
+[CV 2/5; 26/27] START C=100, epsilon=0.001, gamma=0.01..........................
+[CV 2/5; 26/27] END C=100, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-4.983) r2: (test=0.855) total time= 3.9min
+[CV 3/5; 26/27] START C=100, epsilon=0.001, gamma=0.01..........................
+[CV 3/5; 26/27] END C=100, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-5.057) r2: (test=0.861) total time= 3.8min
+[CV 4/5; 26/27] START C=100, epsilon=0.001, gamma=0.01..........................
+[CV 4/5; 26/27] END C=100, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-4.887) r2: (test=0.865) total time= 3.7min
+[CV 5/5; 26/27] START C=100, epsilon=0.001, gamma=0.01..........................
+[CV 5/5; 26/27] END C=100, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-4.977) r2: (test=0.864) total time= 3.8min
+[CV 1/5; 27/27] START C=100, epsilon=0.001, gamma=scale.........................
+[CV 1/5; 27/27] END C=100, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-4.805) r2: (test=0.873) total time=52.8min
+[CV 5/5; 1/27] START C=0.1, epsilon=0.1, gamma=0.1..............................
+[CV 5/5; 1/27] END C=0.1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-6.782) r2: (test=0.815) total time= 2.2min
+[CV 5/5; 2/27] START C=0.1, epsilon=0.1, gamma=0.01.............................
+[CV 5/5; 2/27] END C=0.1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-7.745) r2: (test=0.788) total time= 2.2min
+[CV 3/5; 5/27] START C=0.1, epsilon=0.01, gamma=0.01............................
+[CV 3/5; 5/27] END C=0.1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-7.910) r2: (test=0.782) total time= 2.3min
+[CV 1/5; 7/27] START C=0.1, epsilon=0.001, gamma=0.1............................
+[CV 1/5; 7/27] END C=0.1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-6.858) r2: (test=0.819) total time= 2.3min
+[CV 4/5; 8/27] START C=0.1, epsilon=0.001, gamma=0.01...........................
+[CV 4/5; 8/27] END C=0.1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-7.586) r2: (test=0.791) total time= 2.3min
+[CV 3/5; 10/27] START C=1, epsilon=0.1, gamma=0.1...............................
+[CV 3/5; 10/27] END C=1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-5.191) r2: (test=0.857) total time= 2.2min
+[CV 5/5; 11/27] START C=1, epsilon=0.1, gamma=0.01..............................
+[CV 5/5; 11/27] END C=1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-6.210) r2: (test=0.830) total time= 2.2min
+[CV 3/5; 13/27] START C=1, epsilon=0.01, gamma=0.1..............................
+[CV 3/5; 13/27] END C=1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-5.199) r2: (test=0.857) total time= 2.4min
+[CV 1/5; 15/27] START C=1, epsilon=0.01, gamma=scale............................
+[CV 1/5; 15/27] END C=1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-5.104) r2: (test=0.865) total time= 2.4min
+[CV 4/5; 16/27] START C=1, epsilon=0.001, gamma=0.1.............................
+[CV 4/5; 16/27] END C=1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-5.057) r2: (test=0.861) total time= 2.3min
+[CV 1/5; 18/27] START C=1, epsilon=0.001, gamma=scale...........................
+[CV 1/5; 18/27] END C=1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-5.105) r2: (test=0.865) total time= 2.3min
+[CV 5/5; 19/27] START C=100, epsilon=0.1, gamma=0.1.............................
+[CV 5/5; 19/27] END C=100, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-5.124) r2: (test=0.860) total time=75.5min
+[CV 4/5; 22/27] START C=100, epsilon=0.01, gamma=0.1............................
+[CV 4/5; 22/27] END C=100, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-4.917) r2: (test=0.865) total time=72.9min
+[CV 5/5; 24/27] START C=100, epsilon=0.01, gamma=scale..........................
+[CV 5/5; 24/27] END C=100, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-5.017) r2: (test=0.863) total time=56.2min
+[CV 3/5; 27/27] START C=100, epsilon=0.001, gamma=scale.........................
+[CV 3/5; 27/27] END C=100, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-4.798) r2: (test=0.868) total time=50.3min
+[CV 2/5; 2/27] START C=0.1, epsilon=0.1, gamma=0.01.............................
+[CV 2/5; 2/27] END C=0.1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-7.633) r2: (test=0.778) total time= 2.2min
+[CV 1/5; 4/27] START C=0.1, epsilon=0.01, gamma=0.1.............................
+[CV 1/5; 4/27] END C=0.1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-6.856) r2: (test=0.819) total time= 2.2min
+[CV 2/5; 5/27] START C=0.1, epsilon=0.01, gamma=0.01............................
+[CV 2/5; 5/27] END C=0.1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-7.632) r2: (test=0.778) total time= 2.2min
+[CV 4/5; 6/27] START C=0.1, epsilon=0.01, gamma=scale...........................
+[CV 4/5; 6/27] END C=0.1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-6.618) r2: (test=0.818) total time= 2.3min
+[CV 2/5; 8/27] START C=0.1, epsilon=0.001, gamma=0.01...........................
+[CV 2/5; 8/27] END C=0.1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-7.628) r2: (test=0.778) total time= 2.3min
+[CV 5/5; 9/27] START C=0.1, epsilon=0.001, gamma=scale..........................
+[CV 5/5; 9/27] END C=0.1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-6.680) r2: (test=0.817) total time= 2.2min
+[CV 2/5; 11/27] START C=1, epsilon=0.1, gamma=0.01..............................
+[CV 2/5; 11/27] END C=1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-6.210) r2: (test=0.820) total time= 2.3min
+[CV 2/5; 13/27] START C=1, epsilon=0.01, gamma=0.1..............................
+[CV 2/5; 13/27] END C=1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-5.112) r2: (test=0.851) total time= 2.4min
+[CV 5/5; 14/27] START C=1, epsilon=0.01, gamma=0.01.............................
+[CV 5/5; 14/27] END C=1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-6.211) r2: (test=0.830) total time= 2.3min
+[CV 3/5; 16/27] START C=1, epsilon=0.001, gamma=0.1.............................
+[CV 3/5; 16/27] END C=1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-5.200) r2: (test=0.857) total time= 2.4min
+[CV 2/5; 18/27] START C=1, epsilon=0.001, gamma=scale...........................
+[CV 2/5; 18/27] END C=1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-5.138) r2: (test=0.851) total time= 2.3min
+[CV 4/5; 19/27] START C=100, epsilon=0.1, gamma=0.1.............................
+[CV 4/5; 19/27] END C=100, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-4.889) r2: (test=0.865) total time=75.4min
+[CV 3/5; 22/27] START C=100, epsilon=0.01, gamma=0.1............................
+[CV 3/5; 22/27] END C=100, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-4.910) r2: (test=0.865) total time=73.9min
+[CV 1/5; 25/27] START C=100, epsilon=0.001, gamma=0.1...........................
+[CV 1/5; 25/27] END C=100, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-4.920) r2: (test=0.870) total time=76.0min
+[CV 4/5; 27/27] START C=100, epsilon=0.001, gamma=scale.........................
+[CV 4/5; 27/27] END C=100, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-4.780) r2: (test=0.868) total time=35.3min
+[CV 3/5; 1/27] START C=0.1, epsilon=0.1, gamma=0.1..............................
+[CV 3/5; 1/27] END C=0.1, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-6.949) r2: (test=0.808) total time= 2.1min
+[CV 4/5; 2/27] START C=0.1, epsilon=0.1, gamma=0.01.............................
+[CV 4/5; 2/27] END C=0.1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-7.587) r2: (test=0.791) total time= 2.2min
+[CV 5/5; 4/27] START C=0.1, epsilon=0.01, gamma=0.1.............................
+[CV 5/5; 4/27] END C=0.1, epsilon=0.01, gamma=0.1; neg_mean_squared_error: (test=-6.780) r2: (test=0.815) total time= 2.3min
+[CV 5/5; 6/27] START C=0.1, epsilon=0.01, gamma=scale...........................
+[CV 5/5; 6/27] END C=0.1, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-6.680) r2: (test=0.817) total time= 2.3min
+[CV 3/5; 8/27] START C=0.1, epsilon=0.001, gamma=0.01...........................
+[CV 3/5; 8/27] END C=0.1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-7.908) r2: (test=0.782) total time= 2.3min
+[CV 4/5; 9/27] START C=0.1, epsilon=0.001, gamma=scale..........................
+[CV 4/5; 9/27] END C=0.1, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-6.619) r2: (test=0.818) total time= 2.2min
+[CV 3/5; 11/27] START C=1, epsilon=0.1, gamma=0.01..............................
+[CV 3/5; 11/27] END C=1, epsilon=0.1, gamma=0.01; neg_mean_squared_error: (test=-6.394) r2: (test=0.824) total time= 2.2min
+[CV 5/5; 12/27] START C=1, epsilon=0.1, gamma=scale.............................
+[CV 5/5; 12/27] END C=1, epsilon=0.1, gamma=scale; neg_mean_squared_error: (test=-5.176) r2: (test=0.859) total time= 2.2min
+[CV 2/5; 14/27] START C=1, epsilon=0.01, gamma=0.01.............................
+[CV 2/5; 14/27] END C=1, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-6.208) r2: (test=0.820) total time= 2.4min
+[CV 1/5; 16/27] START C=1, epsilon=0.001, gamma=0.1.............................
+[CV 1/5; 16/27] END C=1, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-5.080) r2: (test=0.866) total time= 2.4min
+[CV 4/5; 17/27] START C=1, epsilon=0.001, gamma=0.01............................
+[CV 4/5; 17/27] END C=1, epsilon=0.001, gamma=0.01; neg_mean_squared_error: (test=-6.094) r2: (test=0.832) total time= 2.3min
+[CV 2/5; 19/27] START C=100, epsilon=0.1, gamma=0.1.............................
+[CV 2/5; 19/27] END C=100, epsilon=0.1, gamma=0.1; neg_mean_squared_error: (test=-4.953) r2: (test=0.856) total time=77.8min
+[CV 1/5; 23/27] START C=100, epsilon=0.01, gamma=0.01...........................
+[CV 1/5; 23/27] END C=100, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-4.950) r2: (test=0.869) total time= 4.1min
+[CV 2/5; 23/27] START C=100, epsilon=0.01, gamma=0.01...........................
+[CV 2/5; 23/27] END C=100, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-4.981) r2: (test=0.855) total time= 3.7min
+[CV 3/5; 23/27] START C=100, epsilon=0.01, gamma=0.01...........................
+[CV 3/5; 23/27] END C=100, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-5.057) r2: (test=0.861) total time= 3.7min
+[CV 4/5; 23/27] START C=100, epsilon=0.01, gamma=0.01...........................
+[CV 4/5; 23/27] END C=100, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-4.888) r2: (test=0.865) total time= 3.7min
+[CV 5/5; 23/27] START C=100, epsilon=0.01, gamma=0.01...........................
+[CV 5/5; 23/27] END C=100, epsilon=0.01, gamma=0.01; neg_mean_squared_error: (test=-4.977) r2: (test=0.864) total time= 3.9min
+[CV 1/5; 24/27] START C=100, epsilon=0.01, gamma=scale..........................
+[CV 1/5; 24/27] END C=100, epsilon=0.01, gamma=scale; neg_mean_squared_error: (test=-4.802) r2: (test=0.873) total time=56.6min
+[CV 4/5; 25/27] START C=100, epsilon=0.001, gamma=0.1...........................
+[CV 4/5; 25/27] END C=100, epsilon=0.001, gamma=0.1; neg_mean_squared_error: (test=-4.920) r2: (test=0.865) total time=72.5min
+[CV 5/5; 27/27] START C=100, epsilon=0.001, gamma=scale.........................
+[CV 5/5; 27/27] END C=100, epsilon=0.001, gamma=scale; neg_mean_squared_error: (test=-5.019) r2: (test=0.863) total time=37.0min
+
+Grid Search Completed in: 5:29:12.299380
+
+Best Parameters in Grid Search:
+ {'C': 100, 'epsilon': 0.1, 'gamma': 'scale'}
+
+Best Estimator in Grid Search:
+ SVR(C=100)
+
+
+Support Vector Machine - Mean Squared Error (MSE) from Cross Validation:
+ [4.7869756  4.81861617 4.78283611 4.76204603 4.99659337]
+
+Support Vector Machine - R2 Score from Cross Validation:
+ [0.87342761 0.86001132 0.86808174 0.86888552 0.86341403]
+
+Support Vector Machine - Error Values for Predicted Values:
+
+Mean Absolute Error (MAE) :
+ 1.6386806462472463
+
+Mean Squared Error (MSE) :
+ 5.012881014241868
+
+Root Mean Square Error (RMSE) :
+ 2.238946407183939
+
+R2 Score :
+ 0.8753086684859772
