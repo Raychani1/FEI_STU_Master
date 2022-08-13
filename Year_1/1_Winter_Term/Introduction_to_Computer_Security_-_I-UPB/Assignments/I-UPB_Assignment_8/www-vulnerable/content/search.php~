@@ -1,0 +1,35 @@
+<?php
+
+//uplne najlepsie http://www.w3schools.com/php/php_mysql_prepared_statements.asp 
+//pripade treba pozriet na real_escape_string() a whitelistovat vyhladavanie teda povolit len znaky a cisla napriklad regexom ;)
+//$search = $db->query('SELECT * FROM articles WHERE title LIKE "%'.$_POST[search].'%" OR content LIKE "%'.$_POST[search].'%"');
+$stmt = $db->stmt_init();
+$sql = "SELECT id,title FROM articles WHERE title LIKE ? OR content LIKE ?";
+$stmt = $db->prepare($sql);
+if (  false === $stmt  ) {
+ die('prepare() failed: ' . htmlspecialchars($db->error));
+}
+$rc = $stmt->bind_param("ss",$srch,$srch);
+if ( false===$rc ) {
+  // again execute() is useless if you can't bind the parameters. Bail out somehow.
+  die('bind_param() failed: ' . htmlspecialchars($stmt->error));
+}
+$srch = isset($_POST[search]) ? "%{$_POST[search]}%" : '';
+$rc = $stmt->execute();
+if ( false===$rc ) {
+  // again execute() is useless if you can't bind the parameters. Bail out somehow.
+  die('execute() failed: ' . htmlspecialchars($stmt->error));
+}
+?>
+<h1> Výsledky vyhľadavania: <?=$_POST['search']?></h1>
+
+<div>
+    <?php
+    $stmt->bind_result($id, $title);
+    while($stmt->fetch()){
+//	echo "Id: {$id}, title: {$title}";
+    //while($data = $search->fetch()){
+        echo 'Článok: <a href="./index.phphp?id={$id}">{$title}</a><br />';
+    }
+    ?>
+</div>
