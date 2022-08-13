@@ -1,0 +1,14 @@
+.idea/
+
+# virtualenv
+.venv
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Notebook checkpoints
+notebooks/.ipynb_checkpoints
+
+# Trining History JSON File ( due to File Size )
+output/history.json

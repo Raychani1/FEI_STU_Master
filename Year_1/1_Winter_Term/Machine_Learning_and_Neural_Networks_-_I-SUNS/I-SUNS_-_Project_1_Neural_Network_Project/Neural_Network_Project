@@ -1,0 +1,136 @@
+#!/bin/bash
+
+# Color definitions
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+ROOT_DIR=$(pwd)
+
+folders=("configs" "data" "dataloader" "executor" "models" "ops" "output" "utils")
+files=("neural_network_project.py" "wine_train.csv" "wine_test.csv" "units.py" "setup.py" "plotter.py" "neural_network.py" "grid_search_output.txt" "dataloader.py" "config.py" "base_model.py")
+
+# Create Project Folders
+function create_folders() {
+   folder_list=("$@")
+   for folder in "${folder_list[@]}";
+      do
+          if [ ! -d "$ROOT_DIR/$folder" ] ; then
+            echo -e "${GREEN}Creating Project Folder $folder\n${NC}"
+            mkdir "$folder"
+          fi
+      done
+}
+
+# Move Source Files to Project Folders
+function move_files_to_folder() {
+   file_list=("$@")
+   for file in "${file_list[@]}";
+      do
+        if test -f "$ROOT_DIR/$file"; then
+
+          case $file in
+
+            "neural_network_project.py")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}executor\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/executor/$file"
+              ;;
+
+            "wine_train.csv" | "wine_test.csv")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}data\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/data/$file"
+              ;;
+
+            "units.py" | "config.py")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}configs\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/configs/$file"
+              ;;
+
+            "setup.py")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}utils\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/utils/$file"
+              ;;
+
+            "plotter.py")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}ops\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/ops/$file"
+              ;;
+
+            "neural_network.py" | "base_model.py")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}models\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/models/$file"
+              ;;
+
+            "grid_search_output.txt")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}output\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/output/$file"
+              ;;
+
+            "dataloader.py")
+              echo -e "${GREEN}Moving ${NC}$file${GREEN} to Project Folder ${NC}dataloader\n"
+              mv "$ROOT_DIR/$file" "$ROOT_DIR/dataloader/$file"
+              ;;
+          esac
+        fi
+      done
+}
+
+# Check for existence of Virtual Environment
+function check_for_virtual_environment() {
+    if [ ! -d "$ROOT_DIR/venv" ] ; then
+
+      # If not found create one
+      echo -e "${GREEN}Creating Virtual Environment\n${NC}"
+      python -m venv venv
+
+      else
+        # If it exists inform the user
+        echo -e "${GREEN}Found existing Virtual Environment\n${NC}"
+
+    fi
+}
+
+# Activate Virtual Environment
+function activate_virtual_environment() {
+    echo -e "${GREEN}Activating Virtual Environment\n${NC}"
+    source "$ROOT_DIR/venv/bin/activate"
+}
+
+# Get current Virtual Environment name
+function get_virtual_environment() {
+    echo -e "${GREEN}Current Virtual Environment\n${NC}"
+    echo "$VIRTUAL_ENV"
+}
+
+# Run the setup.py script
+function run_setup() {
+    echo -e "${GREEN}\nRunning setup.py\n${NC}"
+    python "$ROOT_DIR/utils/setup.py" "$ROOT_DIR"
+}
+
+# Run the main.py script
+function run_main() {
+    echo -e "${GREEN}\nRunning main.py\n${NC}"
+    sleep 3;
+    clear;
+    python "$ROOT_DIR/main.py" "$1"
+}
+
+# Run the whole project
+function run() {
+  if [ "$#" -lt 1 ]; then
+    echo -e "${RED}Missing Argument! Please specify Execution mode : --best | --under_train | --over_train | --fast_train | --slow_train\n${NC}"
+    elif [ "$#" -eq 1 ]; then
+        create_folders "${folders[@]}"
+        move_files_to_folder "${files[@]}"
+        check_for_virtual_environment
+        activate_virtual_environment
+        get_virtual_environment
+        run_setup
+        run_main "$1"
+    else
+      echo -e "${RED}Too many arguments! Please specify Execution mode : --best | --under_train | --over_train | --fast_train | --slow_train\n${NC}"
+  fi
+}
+
+run "$@"
