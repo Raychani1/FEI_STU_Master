@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Color definitions
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+# Maximal number of arguments
+MAX_ARGS=1
+
+if [ "$#" -lt 1 ]
+  then
+    # The user forgot to pass the file name
+    echo -e "${RED}Missing argument! Please enter only the file name ( with no extensions ) !\n${NC}"
+
+    else
+      if [ "$#" -gt "$MAX_ARGS" ]
+        then
+          # The user passed more arguments than it is allowed
+          echo -e "${RED}Too many arguments! Please enter only the file name ( with no extensions ) !\n${NC}"
+
+        else
+            # Check if the Virtual Environment already exists
+            if [ ! -d "$(pwd)/venv" ] ; then
+
+              # If not create one
+              echo -e "${GREEN}Creating Virtual Environment\n${NC}"
+              python -m venv venv
+
+              else
+                # If it exists inform the user
+                echo -e "${GREEN}Found existing Virtual Environment\n${NC}"
+            fi
+
+            # Activate the Virtual Environment
+            echo -e "${GREEN}Activating Virtual Environment\n${NC}"
+            source venv/bin/activate
+
+            # Display the current Virtual Environment
+            echo -e "${GREEN}Current Virtual Environment\n${NC}"
+            echo "$VIRTUAL_ENV"
+
+            # Run the Setup script
+            echo -e "${GREEN}\nRunning setup.py\n${NC}"
+            python "./setup.py"
+
+            # Run the Main script
+            echo -e "${GREEN}\nRunning main.py\n${NC}"
+            python "./main.py" "$1"
+
+            # Run a diff check on the original and the decrypted file
+            echo -e "${GREEN}\nRunning diff on the Original and the Decrypted file: \n${NC}"
+            echo -e "Differences:\n"
+            diff "$(pwd)/data/$1.txt" "$(pwd)/data/decrypted.txt"
+      fi
+fi
